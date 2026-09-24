@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#12211e">
+  <title>Pathirana Auto · Workshop & Carpets</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',Arial,sans-serif;color:#1c2c29;background:#f4f6f2;font-size:14px}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{min-height:100vh;display:grid;grid-template-columns:244px minmax(0,1fr)}.sidebar{background:#142520;color:#eaf4eb;padding:31px 18px;display:flex;flex-direction:column;min-height:100vh}.brand{display:flex;align-items:center;gap:13px;padding:0 11px 45px}.brand-mark{height:39px;width:39px;display:grid;place-items:center;border-radius:12px;background:#d2ed92;color:#183126;font:800 24px Manrope;position:relative}.brand-mark span{font-size:8px;position:absolute;right:5px;top:4px}.brand strong{font:800 15px Manrope;letter-spacing:1.2px;display:block}.brand small{color:#a7b9ac;font-size:10px;letter-spacing:2px}.nav-caption,.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#879f8e}.nav-caption{margin:0 12px 12px}nav{display:grid;gap:4px}nav button{border:0;background:transparent;color:#adbfaf;text-align:left;padding:13px 14px;border-radius:10px;display:flex;align-items:center;gap:13px;width:100%;font-weight:600}nav button.active,nav button:hover{background:#2d4438;color:#f5faed}nav button.active{box-shadow:inset 3px 0 #d2ed92}nav .icon{width:20px;text-align:center;font-size:18px}.sidebar-foot{margin-top:auto;border-top:1px solid #30463a;padding:21px 12px 0;color:#d3e7d0;font-weight:600}.sidebar-foot small{display:block;color:#8fa796;margin:8px 0 0 17px;font-weight:400}.online-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#bbdd81;margin-right:6px}.main{padding:35px clamp(20px,4vw,58px) 20px;max-width:1700px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}.topbar h1{font:800 clamp(25px,3vw,32px) Manrope;margin:8px 0 0;letter-spacing:-1.1px}.top-actions{display:flex;gap:24px;align-items:center;color:#7e8d84;font-size:12px;font-weight:700}.button{border-radius:9px;border:1px solid transparent;padding:11px 16px;font-weight:700;white-space:nowrap}.primary{background:#bfe181;color:#193321}.primary:hover{background:#a6d664}.secondary{background:white;color:#31443a;border-color:#dce4dc}.secondary:hover{background:#f1f5ec}.danger{color:#ae4e39}.grid-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:25px}.stat,.panel{background:#fff;border:1px solid #e5ebe5;box-shadow:0 4px 20px #162e1908;border-radius:14px}.stat{padding:21px}.stat .label{display:flex;justify-content:space-between;align-items:center;color:#819087;font-weight:700;font-size:12px}.stat .symbol{background:#eff5e8;color:#57803f;border-radius:9px;padding:7px;font-size:16px}.stat strong{display:block;font:800 27px Manrope;margin-top:16px}.stat small{display:block;color:#819087;margin-top:5px}.two-col{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}.panel{padding:22px;min-width:0;margin-bottom:20px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}.panel h2{font:800 17px Manrope;margin:0}.panel-head p{color:#849189;margin:5px 0 0;font-size:12px}.panel-head button.link{background:none;border:0;color:#477742;font-weight:700}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}th{color:#87948b;font-size:10px;letter-spacing:1.3px;text-transform:uppercase;border-bottom:1px solid #e9eee9;padding:11px 12px}td{border-bottom:1px solid #eff2ed;padding:15px 12px;color:#526159}tr:last-child td{border-bottom:0}td strong{color:#25372e}td small{display:block;margin-top:3px;color:#91a096}.badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#f2f4ee;color:#607063;font-size:11px;font-weight:700}.badge.progress{background:#fff1d7;color:#96712e}.badge.ready{background:#e4f2dc;color:#568148}.badge.closed{background:#eaece9;color:#66736a}.badge.low{background:#fff0e8;color:#bd6943}.text-button{border:0;background:none;color:#40723f;font-weight:700;padding:5px}.empty{padding:45px 20px;text-align:center;color:#88978c}.empty b{display:block;color:#3a4d3c;margin-bottom:7px}.section-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}.section-bar p{color:#809087;margin:0}.search{border:1px solid #dce5dc;background:#fff;border-radius:9px;padding:10px 12px;min-width:220px;outline-color:#96bd74}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.summary-line{display:flex;justify-content:space-between;border-bottom:1px solid #ecf0eb;padding:11px 0}.summary-line:last-child{border:0}.summary-line strong{color:#23392c}.progressbar{height:7px;border-radius:7px;background:#e9eee7;overflow:hidden;margin-top:14px}.progressbar span{display:block;background:#b2d779;height:100%}.activity{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid #edf1eb}.activity:last-child{border:0}.activity-icon{width:31px;height:31px;display:grid;place-items:center;background:#eef4e8;border-radius:8px;color:#638343}.activity p{margin:0;font-weight:600}.activity small{color:#8b998d}footer{display:flex;justify-content:space-between;gap:10px;color:#95a197;font-size:11px;margin-top:30px}#notice:not(:empty){padding:12px 15px;margin:-8px 0 20px;border-radius:9px;background:#e9f4dd;color:#37643e;font-weight:600}#notice.error{background:#fff0e9;color:#a24836}dialog{border:1px solid #e2eae0;border-radius:16px;box-shadow:0 25px 80px #0e251b55;width:min(470px,calc(100% - 24px));padding:24px;color:#23372c}dialog::backdrop{background:#10251c99}.modal-head{display:flex;justify-content:space-between;align-items:start;margin-bottom:18px}.modal-head h2{margin:7px 0 0;font:800 23px Manrope}.icon-button{font-size:25px;line-height:1;border:0;background:none;color:#718174}.field{display:block;margin:13px 0;color:#596a5d;font-size:12px;font-weight:700}.field input,.field select,.field textarea{display:block;width:100%;margin-top:7px;border:1px solid #d8e3d7;border-radius:8px;padding:11px;color:#21382b;background:#fff;outline-color:#92bd72}.field textarea{min-height:85px;resize:vertical}.modal-actions{display:flex;justify-content:end;gap:10px;margin-top:23px}.hint{background:#f3f7ed;padding:12px;border-radius:8px;color:#677a65;font-size:12px}.invoice-card{border:1px solid #e6ece3;border-radius:11px;padding:18px;margin:12px 0;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}.invoice-card strong{font-size:16px}.invoice-card p{margin:5px 0;color:#829088}.invoice-card .total{text-align:right;font:800 18px Manrope}.invoice-card .total small{display:block;color:#8a978d;font:400 11px 'DM Sans';margin-top:4px}@media(max-width:1000px){.grid-stats{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}}@media(max-width:720px){.shell{display:block}.sidebar{min-height:auto;padding:13px 14px 8px}.brand{padding:0 0 13px}.sidebar-foot,.nav-caption{display:none}nav{display:flex;overflow:auto;gap:5px}nav button{width:auto;white-space:nowrap;padding:9px 11px}nav .icon{display:none}.main{padding:23px 15px}.topbar{align-items:start}.top-actions{flex-direction:column;align-items:end;gap:9px}.grid-stats{gap:10px}.stat{padding:14px}.stat strong{font-size:23px}.panel{padding:16px}.section-bar{align-items:start;flex-direction:column}.search{width:100%}footer span{display:none}}@media(max-width:430px){.top-actions #today{display:none}.topbar h1{font-size:23px}.button{padding:10px}.grid-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.top-actions{flex-wrap:wrap;justify-content:flex-end}@media print{.shell{display:block}.sidebar,.topbar,.text-button,.button,.modal-actions,footer{display:none!important}.main{padding:0}.panel{box-shadow:none;border:1px solid #ddd}.two-col{grid-template-columns:1fr 1fr}body{background:white}}
+
+/* Professional workshop extensions */
+.grid-stats{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.brand-partners{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.partner-logo{height:38px;min-width:96px;max-width:132px;object-fit:contain;background:#fff;border:1px solid #e1e7e1;border-radius:9px;padding:6px 10px}
+.partner-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:18px 0 6px}
+.partner-strip span{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#809087;font-weight:800}
+.filters{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.filters select{border:1px solid #dce5dc;background:#fff;border-radius:9px;padding:10px 11px;color:#31443a;outline-color:#96bd74}
+.service-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:5px}
+.meta-chip{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;background:#eef3ea;color:#58705d;font-size:10px;font-weight:800}
+.meta-chip.free{background:#e4f4df;color:#3e7a43}.meta-chip.paid{background:#e9eef8;color:#4c6485}.meta-chip.warranty{background:#fff0d8;color:#8a6422}
+.finance-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #edf1eb}
+.finance-entry:last-child{border-bottom:0}.finance-entry strong{display:block;color:#293d32}.finance-entry small{display:block;color:#8b998d;margin-top:4px}
+.amount-positive{font:800 15px Manrope;color:#3d7044}.amount-negative{font:800 15px Manrope;color:#a85643}
+.share-note{background:#f5f8f2;border:1px solid #e4ebe1;padding:10px 12px;border-radius:9px;color:#718076;font-size:11px}
+.job-total{font-weight:800;color:#24392d}
+
+
+/* Carpet product catalogue */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}.product-card{background:linear-gradient(180deg,#fffefa,#fffaf1);border:1px solid #eadfce;border-radius:14px;padding:18px;min-height:142px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 4px 18px #4b3a2208}.product-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.product-card h3{margin:0;font:800 17px Manrope;color:#44351f;overflow-wrap:anywhere}.product-icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#f3e8d5;color:#745b39;font-weight:800}.product-price{font:800 22px Manrope;color:#4b3a22;margin:18px 0 12px}.product-card .record-actions{margin-top:auto}.product-count-note{color:#8a7a63;font-size:12px;margin-top:4px}
+@media(max-width:720px){.product-grid{grid-template-columns:1fr}.product-card{min-height:auto}}
+
+/* Carpet business module */
+.business-divider{margin:14px 12px 7px;color:#6f8a78;font-size:9px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+.carpet-banner{background:linear-gradient(135deg,#fff8ea,#f4ead8);border:1px solid #eadcc3;border-radius:15px;padding:18px 20px;margin-bottom:20px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.carpet-banner strong{font:800 18px Manrope;color:#4b3a22}.carpet-banner p{margin:5px 0 0;color:#806f58;font-size:12px}.carpet-mark{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:#6f5535;color:#fff;font-size:24px}
+.carpet-card{border:1px solid #eadfce;background:#fffdfa;border-radius:12px;padding:16px;margin:10px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center}
+.carpet-card p{margin:5px 0;color:#877762}.carpet-card strong{color:#44351f}.carpet-total{text-align:right;font:800 17px Manrope;color:#4b3a22}.carpet-total small{display:block;font:400 11px 'DM Sans';color:#8b7c67;margin-top:4px}
+.badge.paid{background:#e4f2dc;color:#568148}.badge.outstanding{background:#fff1d7;color:#96712e}.badge.cancelled{background:#f3e8e5;color:#9a5a4c}
+.danger-button{background:#fff;border:1px solid #e5c9c1;color:#a44d3b}.danger-button:hover{background:#fff1ed}.danger-zone{margin-top:18px;border-top:1px solid #f0dfda;padding-top:14px}
+.record-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.mini-delete{border:0;background:none;color:#a44d3b;font-weight:700;padding:5px}
+@media(max-width:720px){.carpet-banner{align-items:flex-start}.carpet-card{grid-template-columns:1fr}.carpet-total{text-align:left}.business-divider{display:none}}
+/* Carpet model selector + warranty */
+.model-picker{display:grid;grid-template-columns:1fr;gap:8px;margin-top:8px}.model-choice{display:grid;grid-template-columns:minmax(0,1fr) 118px;align-items:center;gap:14px;border:1px solid #d8e3d7;border-radius:10px;padding:10px 12px;background:#fff;color:#405348}.model-choice.selected{border-color:#8db96d;background:#f1f7e8}.model-check{display:flex;align-items:center;gap:10px;font-weight:800;cursor:pointer;margin:0}.model-check input{accent-color:#6e9d4f;margin:0}.model-qty{display:grid;grid-template-columns:auto 72px;align-items:center;justify-content:end;gap:7px;color:#6e7c73;font-size:11px;font-weight:800}.model-qty input{width:72px;border:1px solid #d8e3d7;border-radius:8px;padding:8px;text-align:center;background:#fff;color:#24382e}.model-qty input:disabled{background:#f1f3f0;color:#9ba69f}.model-picker-note{display:block;font-weight:400;color:#87948b;margin-top:4px}.order-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.order-tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#f3eee5;color:#6b5332;font-size:10px;font-weight:800}.warranty-card{background:#fff;border:1px solid #e4eae3;border-radius:13px;padding:16px;margin:10px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:15px;align-items:center}.warranty-card p{margin:5px 0;color:#7b887f}.warranty-card small{display:block;color:#909d94;margin-top:4px}.warranty-meta{text-align:right}.warranty-meta .record-actions{justify-content:flex-end;margin-top:8px}.coupon-yadea-exact{width:34mm;height:13mm;object-fit:contain;object-position:left center;display:block;margin-bottom:1.5mm}@media(max-width:720px){.model-choice{grid-template-columns:minmax(0,1fr) 104px}.model-qty{grid-template-columns:auto 62px}.model-qty input{width:62px}.warranty-card{grid-template-columns:1fr}.warranty-meta{text-align:left}.warranty-meta .record-actions{justify-content:flex-start}}
+
+@media(max-width:720px){.brand-partners{display:none}.filters{width:100%}.filters select{flex:1;min-width:145px}}
+@media print{.brand-partners,.filters,.share-only{display:none!important}}
+
+[hidden]{display:none!important}.login-wrap{min-height:100vh;display:grid;place-items:center;padding:24px}.login-card{max-width:440px;width:100%;background:white;padding:32px;border-radius:18px;border:1px solid #d9e3dc}.login-card h1{font-size:30px;margin:12px 0}.login-card p{line-height:1.6}.login-card form{display:grid;gap:16px}.login-card input{width:100%}.error-text{color:#a12c30;white-space:pre-wrap}.cloud-status{font-size:12px;line-height:1.5}.sidebar-foot small{overflow-wrap:anywhere}@media print{#auth-view,#logout,#notice{display:none!important}}
+
+
+/* YADEA free-service coupon summary */
+.coupon-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}.coupon-toolbar p{margin:0;color:#718076}.coupon-preview-wrap{overflow:auto;padding:4px 0 18px}.coupon-pdf-area{display:grid;gap:18px}.coupon-sheet{width:287mm;min-height:197mm;margin:0 auto;background:#fff;color:#111;border:1.4px solid #111;padding:5.5mm 6mm 5mm;font-family:Arial,Helvetica,sans-serif;font-weight:500;box-shadow:0 5px 22px #15211914}.coupon-sheet *{box-sizing:border-box}.coupon-sheet-header{display:grid;grid-template-columns:1.05fr 1.95fr;gap:11mm;align-items:start;margin-bottom:3mm}.coupon-company{display:flex;gap:3mm;align-items:flex-start}.coupon-yadea-logo{display:flex;align-items:center;gap:2.2mm;font-weight:900;font-size:18.4px;letter-spacing:.45px;margin-bottom:1.5mm;color:#111}.coupon-yadea-logo svg{width:11mm;height:8mm}.coupon-company-details{font-size:10.8px;line-height:1.38;font-weight:600}.coupon-company-details strong{font-size:11px;font-weight:800}.coupon-title{text-align:center;font-weight:900;font-size:16.4px;letter-spacing:.2px;padding:4mm 0 5mm;white-space:nowrap}.coupon-top-fields{font-size:10.2px;display:grid;gap:1.7mm;font-weight:600}.coupon-line{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:2mm;min-height:6mm}.coupon-line label{font-weight:800;white-space:nowrap}.coupon-line input{border:0;border-bottom:1px dotted #111;border-radius:0;padding:1mm .5mm;height:5.5mm;background:transparent;color:#111;outline:none;min-width:0;font-weight:600}.coupon-line input:focus{background:#fffbe9}.coupon-stamp-row{display:grid;grid-template-columns:1fr 1fr;gap:10mm;align-items:end;margin:1mm 0 3mm}.coupon-stamp-row .coupon-line{font-size:10px}.coupon-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:9.1px;color:#111;white-space:normal;font-weight:600}.coupon-table th,.coupon-table td{border:1px solid #111;padding:0;text-align:center;vertical-align:middle}.coupon-table th{font-size:8.9px;letter-spacing:0;font-weight:800;text-transform:uppercase;height:6.5mm;color:#111;background:#fff}.coupon-table .subhead{height:5.2mm;font-size:8.4px;text-transform:none}.coupon-table tbody tr{height:6.4mm}.coupon-table .c-sr{width:4.5%}.coupon-table .c-date{width:10%}.coupon-table .c-kms{width:7%}.coupon-table .c-chassis{width:22%}.coupon-table .c-regmotor{width:27%}.coupon-table .c-sale{width:12%}.coupon-table .c-remarks{width:17.5%}.coupon-cell-input{width:100%;height:100%;min-height:6mm;border:0;border-radius:0;padding:.7mm 1mm;text-align:center;background:transparent;color:#111;font:600 9px Arial,Helvetica,sans-serif;outline:none}.coupon-cell-input:focus{background:#fffbe9}.coupon-cell-input[readonly]{cursor:default}.coupon-regmotor{font-size:8.8px;line-height:1.15;padding:.7mm 1mm;font-weight:700}.coupon-regmotor strong{display:block;font-size:8.8px;font-weight:800}.coupon-regmotor span{display:block}.coupon-form-note{font-size:11px;color:#6d7b72;margin:0 0 12px}.coupon-form-note strong{color:#30453a}.coupon-page-break{page-break-after:always;break-after:page}.coupon-page-break:last-child{page-break-after:auto;break-after:auto}.motor-id-lines small{display:block;margin-top:3px}.coupon-empty-auto{color:#777}.coupon-mini{font-size:8px;text-align:right;margin-top:1.5mm;color:#444}
+@media(max-width:720px){.coupon-sheet{margin:0;width:287mm;box-shadow:none}.coupon-preview-wrap{margin-right:-15px;padding-right:15px}.coupon-toolbar{align-items:flex-start}.coupon-toolbar .toolbar{width:100%}}
+@media print{.coupon-preview-wrap{overflow:visible!important;padding:0!important}.coupon-pdf-area{display:block}.coupon-sheet{width:287mm;min-height:197mm;margin:0;box-shadow:none;border:1.4px solid #111}.coupon-page-break{page-break-after:always;break-after:page}.coupon-page-break:last-child{page-break-after:auto;break-after:auto}.coupon-toolbar,.coupon-form-note{display:none!important}}
+
+
+/* product-led carpet inventory + order picker */
+.catalog-stock{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}.stock-pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 9px;background:#f2eee6;color:#6a5639;font-size:11px;font-weight:800}.stock-pill.low{background:#fff0e8;color:#bd6943}.product-picker{display:grid;gap:9px;margin-top:8px}.product-pick-row{display:grid;grid-template-columns:minmax(0,1fr) 110px 92px;gap:10px;align-items:center;border:1px solid #e6ddcf;border-radius:11px;padding:11px;background:#fffdf8}.product-pick-main{display:flex;align-items:center;gap:10px;min-width:0}.product-pick-main input[type=checkbox]{width:18px;height:18px}.product-pick-main strong{display:block;color:#41331f}.product-pick-main small{display:block;color:#8b7a62;margin-top:2px}.product-pick-price{text-align:right;font-weight:800;color:#4b3a22}.product-pick-qty{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:800;color:#79684f}.product-pick-qty input{width:62px;border:1px solid #d8cfbf;border-radius:8px;padding:8px}.product-picker-note{display:block;color:#8a7a63;font-size:11px;margin-top:4px}.inventory-product{display:flex;align-items:center;gap:10px}.inventory-product-mark{width:34px;height:34px;border-radius:9px;background:#f3e8d5;color:#745b39;display:grid;place-items:center;font-weight:900}.carpet-finance-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:20px}.carpet-finance-card{background:#fff;border:1px solid #e6ddcf;border-radius:13px;padding:17px}.carpet-finance-card small{display:block;color:#8b7a62;font-weight:700}.carpet-finance-card strong{display:block;font:800 21px Manrope;margin-top:8px;color:#44351f}@media(max-width:760px){.product-pick-row{grid-template-columns:1fr}.product-pick-price{text-align:left}.carpet-finance-grid{grid-template-columns:repeat(2,1fr)}}
+
+</style>
+</head>
+<body>
+  <section id="auth-view" class="login-wrap"><div class="login-card"><span class="eyebrow">PATHIRANA AUTO</span><h1>Your workshop,<br>in one place.</h1><p>Workshop management plus a separate carpet inventory, order and payment system.</p><div class="partner-strip"><span>Workshop brands</span><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Yadea_Logo.svg" alt="YADEA"><img class="partner-logo" src="https://shop.heromotocorp.com/s/62ea2c599d1398fa16dbae0a/g/67ef8e4af8d3fd5c3fcc913e/hero-logo-480x480.png" alt="Hero"></div><form id="login-form"><label class="field">Email<input id="email" type="email" autocomplete="username" required></label><label class="field">Password<input id="password" type="password" autocomplete="current-password" required></label><button class="button primary" id="login-button">Sign in</button></form><p id="auth-message" role="status" class="error-text">Loading secure sign-in…</p><details id="setup-guide" hidden><summary>Setup instructions and database rules</summary><pre style="white-space:pre-wrap;font:13px/1.6 system-ui">PATHIRANA AUTO — GITHUB + FIREBASE
+
+WHAT TO COPY
+Only index.html is needed on your website. It includes all HTML, CSS and JavaScript.
+Open it as text, select everything, and paste into a GitHub file named index.html.
+Paste firestore.rules into Firebase&#x27;s Rules editor, NOT into index.html.
+No Python, terminal commands, packages, or build step are needed to run this app.
+
+1. CREATE FIREBASE
+Go to https://console.firebase.google.com and create a project.
+Register a Web app using the &lt;/&gt; icon in Project settings &gt; Your apps.
+Copy its firebaseConfig object. In index.html, find:
+    const firebaseConfig = {
+Replace that whole example object with your project&#x27;s web configuration.
+Use the public WEB APP configuration only. Never paste a service-account private key.
+
+2. ENABLE SIGN-IN
+In Firebase Authentication, enable Email/Password under Sign-in method.
+In Authentication &gt; Users, add your own email and a strong password.
+Copy that user&#x27;s UID. Create separate accounts for each staff member.
+The website does not offer public sign-up.
+In Authentication &gt; Settings &gt; Authorized domains, add your GitHub Pages domain,
+for example YOURUSERNAME.github.io (no https:// and no repository path).
+If using another host, add its domain instead.
+
+3. CREATE AND LOCK THE DATABASE
+Open Firestore Database, create the default database in Standard edition,
+and choose production mode. Choose a suitable region during creation.
+Open the Rules tab. Replace its contents with firestore.rules.
+Replace REPLACE_WITH_OWNER_UID with your UID from Authentication &gt; Users.
+For more staff, add their UIDs as quoted strings separated by commas.
+Publish the rules. All approved accounts can read and modify this workshop.
+An unapproved or signed-out account cannot access these records under these rules.
+Do not use test-mode or unrestricted allow read, write rules.
+Each data change uses a transaction and advances a shared revision number.
+Conflicting changes are rejected and refreshed, so the user can review and retry.
+
+4. PUT THE WEBSITE ON GITHUB
+Create a repository (or use your intended existing one).
+Choose Add file &gt; Create new file. Name it index.html.
+Paste the entire index.html contents, including your Firebase configuration.
+Choose Commit changes.
+Under Settings &gt; Pages, select Deploy from a branch, main, and / (root), then Save.
+Open the website address GitHub supplies when deployment completes.
+For GitHub Free, Pages requires a public repository. The website code is public;
+customer records are stored separately in the access-controlled Firebase database.
+Never upload customer exports, passwords, or service-account keys to GitHub.
+GitHub Pages is optional: this same index.html can be served by another static host.
+
+5. SIGN IN AND TEST
+Use the account created in Firebase Authentication.
+Create a TEST customer, add a motorcycle, add a part with quantity 1,
+create a job, and assign the part. Stock should become 0.
+Set labour, issue the invoice, record payment, and print if needed.
+Open the site on a second device with an approved account and verify the records.
+Test a signed-out/unapproved account with Firebase&#x27;s Rules simulator as well.
+Only begin entering real customer data after these checks succeed.
+
+INCLUDED
+Dashboard; customer and motorcycle records; searchable job history; job status;
+work notes and labour; spare parts; restocking and low-stock alerts; parts use
+and returns; invoices; cash/card/bank-transfer payment records; job sorting and service classification; motorcycle chassis/motor/date-of-sale fields; job date/odometer fields; YADEA free-service coupon summary with automatic population and PDF export; income/expense tracking; a fully separate carpet business module with product catalogue, buyers, suppliers, stock, orders, labour, payments and outstanding/paid views; password-gated deletion; native share/copy summaries; print; JSON export.
+Recording a card payment does not process a card or connect to a bank.
+Invoices and finance summaries are management records, not a configured tax/accounting system. The deletion password is a client-side safety lock; Firebase Authentication and Firestore rules remain the real access control.
+
+LIMITS AND BACKUP
+Internet is required. No offline data entry is supported.
+The app reads the workshop&#x27;s records into memory, so it is a small-workshop starter;
+it will need pagination and more selective queries for a large historical database.
+All approved staff have the same access level. There is no administrator dashboard,
+record deletion screen, customer editing, automatic backup, or restore UI yet.
+Backup downloads JSON for safekeeping. It is an export, not automatic disaster recovery.
+Keep exports somewhere private. Do not upload them into the public repository.
+Your earlier browser-only records are not automatically imported or overwritten.
+Firebase quotas and pricing apply; check Usage in your console.
+The website is not connected to your Firebase project until you complete setup.
+Cloud login, real-device syncing and the rules must be verified in your project.
+
+REFERENCES
+https://firebase.google.com/docs/web/alt-setup
+https://firebase.google.com/docs/auth/web/password-auth
+https://firebase.google.com/docs/firestore/security/get-started
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+</pre><p>Copy these rules into Firebase:</p><textarea readonly aria-label="Firestore rules" style="width:100%;height:280px">rules_version = &#x27;2&#x27;;
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function approved() {
+      return request.auth != null &amp;&amp; request.auth.uid in [
+        &#x27;REPLACE_WITH_OWNER_UID&#x27;
+        // Add additional approved staff UIDs here, separated by commas.
+      ];
+    }
+    match /workshops/main {
+      allow read: if approved();
+      allow create: if approved()
+        &amp;&amp; request.resource.data.keys().hasOnly([&#x27;revision&#x27;, &#x27;updatedAt&#x27;])
+        &amp;&amp; request.resource.data.revision == 1
+        &amp;&amp; request.resource.data.updatedAt == request.time;
+      allow update: if approved()
+        &amp;&amp; request.resource.data.keys().hasOnly([&#x27;revision&#x27;, &#x27;updatedAt&#x27;])
+        &amp;&amp; request.resource.data.revision == resource.data.revision + 1
+        &amp;&amp; request.resource.data.updatedAt == request.time;
+      allow delete: if false;
+      match /{kind}/{record} {
+        function validKind() {
+          return kind in [&#x27;customers&#x27;, &#x27;motorcycles&#x27;, &#x27;parts&#x27;, &#x27;jobs&#x27;,
+            &#x27;job_parts&#x27;, &#x27;invoices&#x27;, &#x27;payments&#x27;, &#x27;stock_movements&#x27;, &#x27;finance_records&#x27;,
+            &#x27;carpet_buyers&#x27;, &#x27;carpet_suppliers&#x27;, &#x27;carpet_inventory&#x27;, &#x27;carpet_stock_movements&#x27;,
+            &#x27;carpet_orders&#x27;, &#x27;carpet_order_items&#x27;, &#x27;carpet_payments&#x27;, &#x27;carpet_products&#x27;, &#x27;carpet_finance_records&#x27;, &#x27;warranty_claims&#x27;];
+        }
+        function coordinatedWrite() {
+          let path = /databases/$(database)/documents/workshops/main;
+          return getAfter(path).data.updatedAt == request.time
+            &amp;&amp; ((!exists(path) &amp;&amp; getAfter(path).data.revision == 1)
+              || (exists(path) &amp;&amp; getAfter(path).data.revision == get(path).data.revision + 1));
+        }
+        allow read: if approved() &amp;&amp; validKind();
+        allow create, update: if approved() &amp;&amp; validKind() &amp;&amp; coordinatedWrite()
+          &amp;&amp; request.resource.data.id is int &amp;&amp; request.resource.data.id &gt; 0
+          &amp;&amp; record == string(request.resource.data.id);
+        allow delete: if approved() &amp;&amp; validKind() &amp;&amp; coordinatedWrite();
+      }
+    }
+  }
+}
+</textarea></details><button class="text-button" id="reset-password" type="button">Reset password</button><p class="hint">Access is limited to accounts approved by the workshop owner.</p></div></section><div class="shell" id="workspace" hidden>
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">P<span>✦</span></span><div><strong>PATHIRANA</strong><small>AUTO · WORKSHOP</small></div></div>
+      <p class="nav-caption">WORKSPACE</p>
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-foot"><span class="online-dot"></span> <span id="cloud-status" class="cloud-status">Connecting…</span><small id="signed-in-email"></small><button id="logout" class="button secondary" type="button">Sign out</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><span class="eyebrow" id="section-label">OVERVIEW</span><h1 id="heading">Workshop overview</h1></div><div class="top-actions"><div class="brand-partners" aria-label="Workshop brands"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Yadea_Logo.svg" alt="YADEA"><img class="partner-logo" src="https://shop.heromotocorp.com/s/62ea2c599d1398fa16dbae0a/g/67ef8e4af8d3fd5c3fcc913e/hero-logo-480x480.png" alt="Hero"></div><span id="today"></span><button type="button" id="backup" class="button secondary">↓ Backup</button><button type="button" id="new-job" class="button primary">＋ New job card</button></div></header>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <section id="content" aria-live="polite"></section>
+      <footer>Pathirana Auto · Online workshop <span>Use Backup regularly to protect your records.</span></footer>
+    </main>
+  </div>
+  <dialog id="modal"><div class="modal-head"><div><span class="eyebrow">PATHIRANA AUTO</span><h2 id="modal-title"></h2></div><button type="button" class="icon-button" id="close-modal" aria-label="Close">×</button></div><form id="modal-form"><div id="modal-fields"></div><p id="form-error" class="error-text" role="alert"></p><div class="modal-actions"><button type="button" class="button secondary" id="cancel-modal">Cancel</button><button type="submit" class="button primary">Save</button></div></form></dialog>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script type="module">
+const NAV = [
+  ['dashboard', '◫', 'Dashboard'], ['customers', '♙', 'Customers'],
+  ['motorcycles', '◈', 'Motorcycles'], ['jobs', '▤', 'Job cards'],
+  ['warranty', '◇', 'Warranty'], ['free-coupons', '▥', 'Free service coupons'], ['parts', '▦', 'Inventory'], ['invoices', '▣', 'Invoices'], ['finance', '◉', 'Finance'],
+  ['carpets', '▧', 'Carpets'], ['carpet-products', '◇', 'Products'], ['carpet-inventory', '▦', 'Carpet inventory'],
+  ['carpet-orders', '▤', 'Carpet orders'], ['carpet-outstanding', '◎', 'Outstanding'],
+  ['carpet-paid', '✓', 'Paid'], ['carpet-finance', '◉', 'Carpet finance'], ['carpet-buyers', '♙', 'Carpet buyers'],
+  ['carpet-suppliers', '♜', 'Carpet suppliers']
+];
+const $ = selector => document.querySelector(selector);
+const safe = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const money = cents => 'LKR ' + (Number(cents || 0) / 100).toLocaleString('en-LK', {minimumFractionDigits:2,maximumFractionDigits:2});
+const date = iso => new Date(iso).toLocaleDateString('en-LK', {day:'numeric',month:'short',year:'numeric'});
+const empty = (title, message) => `<div class="empty"><b>${safe(title)}</b>${safe(message)}</div>`;
+
+const EMPTY_STATE = {customers:[],motorcycles:[],parts:[],jobs:[],job_parts:[],invoices:[],payments:[],stock_movements:[],finance_records:[],warranty_claims:[],carpet_buyers:[],carpet_suppliers:[],carpet_products:[],carpet_inventory:[],carpet_stock_movements:[],carpet_orders:[],carpet_order_items:[],carpet_payments:[],carpet_finance_records:[]};
+const CARPET_TYPES=['Carpet','Seat cover'];
+const CARPET_MODELS=['T5','T9','Ruibin','Eezego','Epoc','Cooljoy','M5'];
+const WARRANTY_STATUSES=['Open','Submitted','Approved','Rejected','Completed'];
+let state = null, page = 'dashboard', query = '';
+let jobSort = 'newest', jobTypeFilter = 'all', jobBillingFilter = 'all';
+const COUPON_SETTINGS_KEY='pathirana-free-service-coupon-settings-v1';
+const COUPON_REMARKS_KEY='pathirana-free-service-coupon-remarks-v1';
+function readLocalJson(key,fallback){try{return Object.assign({},fallback,JSON.parse(localStorage.getItem(key)||'{}'));}catch{return {...fallback};}}
+let couponSettings=readLocalJson(COUPON_SETTINGS_KEY,{dealer_stamp:'',bank_account:'',bank_branch:'',month_year:''});
+let couponRemarks=readLocalJson(COUPON_REMARKS_KEY,{});
+let couponFrom='', couponTo='';
+function saveCouponSettings(){try{localStorage.setItem(COUPON_SETTINGS_KEY,JSON.stringify(couponSettings));}catch{}}
+function saveCouponRemarks(){try{localStorage.setItem(COUPON_REMARKS_KEY,JSON.stringify(couponRemarks));}catch{}}
+
+function toast(message, error = false) {
+  const node = $('#notice'); node.textContent = message; if($('#modal').open) $('#form-error').textContent=error?message:''; node.className = error ? 'error' : '';
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => { node.textContent = ''; }, 5500);
+}
+const stamp = () => new Date().toISOString();
+const nextId = list => list.reduce((n,x)=>Math.max(n,x.id),0)+1;
+const required = (data,key) => { const value=String(data[key]??'').trim(); if(!value)throw new Error(`${key.replace(/_/g,' ')} is required`); return value; };
+const whole = (value,label,positive=false) => {const n=Number(value);if(!Number.isSafeInteger(n)||n<0||(positive&&n===0))throw new Error(`${label} must be ${positive?'a positive':'a non-negative'} whole number`);return n;};
+const cents = (value,label='Amount',positive=false) => {const n=Number(value),scaled=n*100;if(!Number.isFinite(n)||!Number.isSafeInteger(Math.round(scaled))||n<0||(positive&&n===0)||Math.abs(Math.round(scaled)-scaled)>0.0000001)throw new Error(`${label} must be ${positive?'positive and ':''}valid, with up to two decimal places`);return Math.round(scaled);};
+function inventoryForProduct(list,product){if(!product)return null;return list.find(x=>Number(x.product_id)===Number(product.id))||list.find(x=>!x.product_id&&String(x.name||'').trim().toLowerCase()===String(product.name||'').trim().toLowerCase())||null;}
+function parseProductQuantities(raw){let source={};try{source=JSON.parse(String(raw||'{}'))||{};}catch{}const out={};for(const [key,val] of Object.entries(source)){const id=Number(key),qty=Math.floor(Number(val));if(Number.isSafeInteger(id)&&id>0&&Number.isSafeInteger(qty)&&qty>0)out[id]=qty;}return out;}
+
+function hydrate() {
+  const customers=new Map(state.customers.map(x=>[x.id,x])), bikes=new Map(state.motorcycles.map(x=>[x.id,x])), parts=new Map(state.parts.map(x=>[x.id,x]));
+  state.motorcycles.forEach(m=>m.customer_name=customers.get(m.customer_id)?.name||'Unknown');
+  state.job_parts.forEach(line=>{const p=parts.get(line.part_id);line.part_name=p?.name||'Unknown';line.sku=p?.sku||'';});
+  state.jobs.forEach(j=>{const m=bikes.get(j.motorcycle_id),c=customers.get(m?.customer_id);Object.assign(j,{registration:m?.registration||'',make:m?.make||'',model:m?.model||'',customer_name:c?.name||'Unknown',parts_cents:state.job_parts.filter(x=>x.job_id===j.id).reduce((sum,x)=>sum+x.quantity*x.unit_price_cents,0),invoiced:state.invoices.some(x=>x.job_id===j.id)});});
+  state.invoices.forEach(i=>{const j=state.jobs.find(x=>x.id===i.job_id);Object.assign(i,{motorcycle_id:j?.motorcycle_id,registration:j?.registration||'',customer_name:j?.customer_name||'Unknown',paid_cents:state.payments.filter(x=>x.invoice_id===i.id).reduce((sum,x)=>sum+x.amount_cents,0)});});
+  state.warranty_claims.forEach(w=>{const m=bikes.get(w.motorcycle_id),c=customers.get(m?.customer_id);Object.assign(w,{registration:m?.registration||'',motor_number:m?.motor_number||'',chassis_number:m?.chassis_number||'',make:m?.make||'',model:m?.model||'',customer_name:c?.name||'Unknown',customer_phone:c?.phone||''});});
+  state.stock_movements.forEach(m=>{const p=parts.get(m.part_id);m.name=p?.name||'Unknown';m.sku=p?.sku||'';});
+
+  const buyers=new Map(state.carpet_buyers.map(x=>[x.id,x])), suppliers=new Map(state.carpet_suppliers.map(x=>[x.id,x])), products=new Map(state.carpet_products.map(x=>[x.id,x])), carpets=new Map(state.carpet_inventory.map(x=>[x.id,x]));
+  state.carpet_products.forEach(product=>{const item=inventoryForProduct(state.carpet_inventory,product);product.stock_item_id=item?.id||null;product.stock_quantity=Number(item?.quantity||0);product.reorder_level=Number(item?.reorder_level||0);product.cost_cents=Number(item?.cost_cents||0);product.supplier_name=suppliers.get(item?.supplier_id)?.name||'Not assigned';product.sku=item?.sku||`PRD-${String(product.id).padStart(4,'0')}`;});
+  state.carpet_inventory.forEach(item=>{const product=products.get(item.product_id)||state.carpet_products.find(p=>String(p.name||'').trim().toLowerCase()===String(item.name||'').trim().toLowerCase());item.product_id=item.product_id||product?.id||null;item.name=product?.name||item.name||'Unknown';item.selling_price_cents=product?.price_cents??item.selling_price_cents??0;item.supplier_name=suppliers.get(item.supplier_id)?.name||'Not assigned';});
+  state.carpet_stock_movements.forEach(m=>{const item=carpets.get(m.item_id);const product=products.get(item?.product_id)||state.carpet_products.find(p=>p.stock_item_id===m.item_id);m.item_name=product?.name||item?.name||'Unknown';m.sku=item?.sku||product?.sku||'';});
+  state.carpet_order_items.forEach(line=>{const item=carpets.get(line.item_id),product=products.get(line.product_id)||products.get(item?.product_id)||state.carpet_products.find(p=>p.stock_item_id===line.item_id);line.product_id=line.product_id||product?.id||null;line.item_name=product?.name||item?.name||'Unknown';line.sku=item?.sku||product?.sku||'';});
+  state.carpet_orders.forEach(o=>{
+    const buyer=buyers.get(o.buyer_id), lines=state.carpet_order_items.filter(x=>x.order_id===o.id), paid=state.carpet_payments.filter(x=>x.order_id===o.id).reduce((sum,x)=>sum+x.amount_cents,0);
+    const items_cents=lines.reduce((sum,x)=>sum+x.quantity*x.unit_price_cents,0),total_cents=items_cents+Number(o.labour_cents||0);
+    Object.assign(o,{buyer_name:buyer?.name||'Unknown',buyer_phone:buyer?.phone||'',items_cents,total_cents,paid_cents:paid,balance_cents:Math.max(0,total_cents-paid)});
+  });
+}
+function refresh() { hydrate(); render(); }
+function mutateState(state, route, data, method = 'POST') {
+  let id; const [resource,rawId]=route.split('/'); const recordId=Number(rawId);
+
+  if(method==='DELETE'&&resource==='job-parts'){
+    const line=state.job_parts.find(x=>x.id===recordId);if(!line)throw new Error('Job part not found');
+    const job=state.jobs.find(x=>x.id===line.job_id);if(job.status==='Closed'||state.invoices.some(x=>x.job_id===job.id))throw new Error('This job is closed or invoiced');
+    state.job_parts=state.job_parts.filter(x=>x.id!==recordId);const part=state.parts.find(x=>x.id===line.part_id);if(part)part.quantity+=line.quantity;
+    if(part)state.stock_movements.unshift({id:nextId(state.stock_movements),part_id:part.id,change:line.quantity,reason:`Returned from job #${job.id}`,created_at:stamp()});id=recordId;
+  } else if(method==='DELETE'&&resource==='invoices'){
+    const invoice=state.invoices.find(x=>x.id===recordId);if(!invoice)throw new Error('Invoice not found');
+    state.payments=state.payments.filter(x=>x.invoice_id!==recordId);state.invoices=state.invoices.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='payments'){
+    if(!state.payments.some(x=>x.id===recordId))throw new Error('Payment not found');state.payments=state.payments.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='jobs'){
+    const job=state.jobs.find(x=>x.id===recordId);if(!job)throw new Error('Job not found');
+    const invoiceIds=state.invoices.filter(x=>x.job_id===recordId).map(x=>x.id);state.payments=state.payments.filter(x=>!invoiceIds.includes(x.invoice_id));state.invoices=state.invoices.filter(x=>x.job_id!==recordId);
+    const lines=state.job_parts.filter(x=>x.job_id===recordId);for(const line of lines){const part=state.parts.find(x=>x.id===line.part_id);if(part){part.quantity+=line.quantity;state.stock_movements.unshift({id:nextId(state.stock_movements),part_id:part.id,change:line.quantity,reason:`Restored from deleted job #${recordId}`,created_at:stamp()});}}
+    state.job_parts=state.job_parts.filter(x=>x.job_id!==recordId);state.jobs=state.jobs.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='customers'){
+    if(state.motorcycles.some(x=>x.customer_id===recordId))throw new Error('Delete this customer’s motorcycles first');state.customers=state.customers.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='motorcycles'){
+    if(state.jobs.some(x=>x.motorcycle_id===recordId))throw new Error('Delete this motorcycle’s job cards first');state.motorcycles=state.motorcycles.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='parts'){
+    if(state.job_parts.some(x=>x.part_id===recordId))throw new Error('This part exists in job history. Delete the related job cards first');state.parts=state.parts.filter(x=>x.id!==recordId);state.stock_movements=state.stock_movements.filter(x=>x.part_id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='finance-records'){
+    state.finance_records=state.finance_records.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-finance-records'){
+    state.carpet_finance_records=state.carpet_finance_records.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='warranty-claims'){
+    state.warranty_claims=state.warranty_claims.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-orders'){
+    const order=state.carpet_orders.find(x=>x.id===recordId);if(!order)throw new Error('Carpet order not found');
+    const lines=state.carpet_order_items.filter(x=>x.order_id===recordId);for(const line of lines){const item=state.carpet_inventory.find(x=>x.id===line.item_id);if(item){item.quantity+=line.quantity;state.carpet_stock_movements.unshift({id:nextId(state.carpet_stock_movements),item_id:item.id,change:line.quantity,reason:`Restored from deleted order #${recordId}`,created_at:stamp()});}}
+    state.carpet_order_items=state.carpet_order_items.filter(x=>x.order_id!==recordId);state.carpet_payments=state.carpet_payments.filter(x=>x.order_id!==recordId);state.carpet_orders=state.carpet_orders.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-order-items'){
+    const line=state.carpet_order_items.find(x=>x.id===recordId);if(!line)throw new Error('Order item not found');const item=state.carpet_inventory.find(x=>x.id===line.item_id);if(item){item.quantity+=line.quantity;state.carpet_stock_movements.unshift({id:nextId(state.carpet_stock_movements),item_id:item.id,change:line.quantity,reason:`Returned from carpet order #${line.order_id}`,created_at:stamp()});}state.carpet_order_items=state.carpet_order_items.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-payments'){
+    state.carpet_payments=state.carpet_payments.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-products'){
+    const product=state.carpet_products.find(x=>x.id===recordId);if(!product)throw new Error('Product not found');const item=inventoryForProduct(state.carpet_inventory,product);if(item&&Number(item.quantity||0)>0)throw new Error('This product still has stock. Reduce stock to zero before deleting it');if(state.carpet_order_items.some(x=>Number(x.product_id)===recordId||(item&&x.item_id===item.id)))throw new Error('This product exists in order history and cannot be deleted');if(item){state.carpet_inventory=state.carpet_inventory.filter(x=>x.id!==item.id);state.carpet_stock_movements=state.carpet_stock_movements.filter(x=>x.item_id!==item.id);}state.carpet_products=state.carpet_products.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-inventory'){
+    if(state.carpet_order_items.some(x=>x.item_id===recordId))throw new Error('This carpet item exists in order history. Delete the related orders first');state.carpet_inventory=state.carpet_inventory.filter(x=>x.id!==recordId);state.carpet_stock_movements=state.carpet_stock_movements.filter(x=>x.item_id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-buyers'){
+    if(state.carpet_orders.some(x=>x.buyer_id===recordId))throw new Error('This buyer has order history. Delete those orders first');state.carpet_buyers=state.carpet_buyers.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='DELETE'&&resource==='carpet-suppliers'){
+    if(state.carpet_inventory.some(x=>x.supplier_id===recordId))throw new Error('This supplier is assigned to carpet stock. Reassign/delete those stock items first');state.carpet_suppliers=state.carpet_suppliers.filter(x=>x.id!==recordId);id=recordId;
+  } else if(method==='PATCH'&&resource==='motorcycles'){
+    const bike=state.motorcycles.find(x=>x.id===recordId);if(!bike)throw new Error('Motorcycle not found');
+    const customer_id=whole(Number(data.customer_id),'Customer',true);if(!state.customers.some(x=>x.id===customer_id))throw new Error('Customer not found');
+    const registration=required(data,'registration').toUpperCase(),motor_number=required(data,'motor_number').toUpperCase(),chassis_number=required(data,'chassis_number').toUpperCase();
+    if(state.motorcycles.some(x=>x.id!==recordId&&x.registration?.toUpperCase()===registration))throw new Error('Registration already exists');
+    if(state.motorcycles.some(x=>x.id!==recordId&&String(x.motor_number||'').toUpperCase()===motor_number))throw new Error('Motor number already exists');
+    if(state.motorcycles.some(x=>x.id!==recordId&&String(x.chassis_number||'').toUpperCase()===chassis_number))throw new Error('Chassis number already exists');
+    const year=data.year?whole(Number(data.year),'Year',true):null;if(year&&(year<1900||year>new Date().getFullYear()+1))throw new Error('Year is out of range');
+    Object.assign(bike,{customer_id,registration,make:required(data,'make'),model:required(data,'model'),year,motor_number,chassis_number,date_of_sale:required(data,'date_of_sale')});id=bike.id;
+  } else if(method==='PATCH'&&resource==='jobs'){
+    const job=state.jobs.find(x=>x.id===recordId);if(!job)throw new Error('Job not found');if(state.invoices.some(x=>x.job_id===job.id))throw new Error('An invoiced job cannot be edited');
+    if(!['Open','In progress','Ready','Closed'].includes(data.status))throw new Error('Invalid status');
+    const service_number=data.service_number?whole(Number(data.service_number),'Service number',true):null;
+    Object.assign(job,{status:data.status,labour_cents:cents(data.labour,'Labour'),notes:String(data.notes||'').trim(),work_type:workTypes.includes(data.work_type)?data.work_type:'Other',billing_type:billingTypes.includes(data.billing_type)?data.billing_type:'Paid service',service_number,service_date:required(data,'service_date'),kilometers:whole(Number(data.kilometers),'Kilometres')});id=job.id;
+  } else if(method==='PATCH'&&resource==='warranty-claims'){
+    const claim=state.warranty_claims.find(x=>x.id===recordId);if(!claim)throw new Error('Warranty claim not found');const status=WARRANTY_STATUSES.includes(data.status)?data.status:null;if(!status)throw new Error('Invalid warranty status');Object.assign(claim,{ticket_number:required(data,'ticket_number'),part_name:required(data,'part_name'),issue:required(data,'issue'),claim_date:required(data,'claim_date'),status,notes:String(data.notes||'').trim()});id=claim.id;
+  } else if(method==='PATCH'&&resource==='carpet-products'){
+    const product=state.carpet_products.find(x=>x.id===recordId);if(!product)throw new Error('Product not found');const oldName=product.name,name=required(data,'name');if(state.carpet_products.some(x=>x.id!==recordId&&x.name.trim().toLowerCase()===name.toLowerCase()))throw new Error('A product with this name already exists');const price_cents=cents(data.price,'Price',true);Object.assign(product,{name,price_cents});const item=inventoryForProduct(state.carpet_inventory,{...product,name:oldName})||inventoryForProduct(state.carpet_inventory,product);if(item)Object.assign(item,{product_id:product.id,name,selling_price_cents:price_cents});id=product.id;
+  } else if(method==='PATCH'&&resource==='carpet-inventory'){
+    const item=state.carpet_inventory.find(x=>x.id===recordId);if(!item)throw new Error('Inventory record not found');const supplier_id=data.supplier_id?whole(Number(data.supplier_id),'Supplier',true):null;if(supplier_id&&!state.carpet_suppliers.some(x=>x.id===supplier_id))throw new Error('Supplier not found');Object.assign(item,{sku:required(data,'sku').toUpperCase(),supplier_id,cost_cents:cents(data.cost,'Cost'),reorder_level:whole(Number(data.reorder_level),'Reorder level'),description:String(data.description||'').trim()});id=item.id;
+  } else if(method==='PATCH'&&resource==='carpet-orders'){
+    const order=state.carpet_orders.find(x=>x.id===recordId);if(!order)throw new Error('Carpet order not found');const status=['Open','In progress','Ready','Completed','Cancelled'].includes(data.status)?data.status:null;if(!status)throw new Error('Invalid order status');const product_type=CARPET_TYPES.includes(data.product_type)?data.product_type:null;if(!product_type)throw new Error('Choose Carpet or Seat cover');const models=String(data.models||'').split('|').filter(x=>CARPET_MODELS.includes(x));if(!models.length)throw new Error('Choose at least one model');const model_quantities=parseModelQuantities(data.model_quantities,models);Object.assign(order,{status,product_type,models,model_quantities,labour_cents:cents(data.labour,'Labour'),special_notes:String(data.special_notes||'').trim(),order_date:required(data,'order_date')});id=order.id;
+  } else if(resource==='customers'){
+    id=nextId(state.customers);state.customers.unshift({id,name:required(data,'name'),phone:required(data,'phone'),email:String(data.email||'').trim(),created_at:stamp()});
+  } else if(resource==='motorcycles'){
+    const customer_id=whole(Number(data.customer_id),'Customer',true);if(!state.customers.some(x=>x.id===customer_id))throw new Error('Customer not found');
+    const registration=required(data,'registration').toUpperCase(),motor_number=required(data,'motor_number').toUpperCase(),chassis_number=required(data,'chassis_number').toUpperCase();
+    if(state.motorcycles.some(x=>x.registration.toUpperCase()===registration))throw new Error('Registration already exists');
+    if(state.motorcycles.some(x=>String(x.motor_number||'').toUpperCase()===motor_number))throw new Error('Motor number already exists');
+    if(state.motorcycles.some(x=>String(x.chassis_number||'').toUpperCase()===chassis_number))throw new Error('Chassis number already exists');
+    const year=data.year?whole(Number(data.year),'Year',true):null;if(year&&(year<1900||year>new Date().getFullYear()+1))throw new Error('Year is out of range');id=nextId(state.motorcycles);state.motorcycles.unshift({id,customer_id,registration,make:required(data,'make'),model:required(data,'model'),year,motor_number,chassis_number,date_of_sale:required(data,'date_of_sale'),created_at:stamp()});
+  } else if(resource==='parts'){
+    const sku=required(data,'sku').toUpperCase();if(state.parts.some(x=>x.sku.toUpperCase()===sku))throw new Error('SKU already exists');const quantity=whole(Number(data.quantity),'Quantity'),reorder_level=whole(Number(data.reorder_level),'Reorder level');id=nextId(state.parts);state.parts.push({id,sku,name:required(data,'name'),quantity,price_cents:cents(data.price,'Price'),reorder_level});if(quantity)state.stock_movements.unshift({id:nextId(state.stock_movements),part_id:id,change:quantity,reason:'Opening balance',created_at:stamp()});
+  } else if(resource==='jobs'){
+    const motorcycle_id=whole(Number(data.motorcycle_id),'Motorcycle',true);if(!state.motorcycles.some(x=>x.id===motorcycle_id))throw new Error('Motorcycle not found');const service_number=data.service_number?whole(Number(data.service_number),'Service number',true):null;
+    id=nextId(state.jobs);state.jobs.unshift({id,motorcycle_id,complaint:required(data,'complaint'),work_type:workTypes.includes(data.work_type)?data.work_type:'Service',billing_type:billingTypes.includes(data.billing_type)?data.billing_type:'Paid service',service_number,service_date:required(data,'service_date'),kilometers:whole(Number(data.kilometers),'Kilometres'),status:'Open',labour_cents:0,notes:'',created_at:stamp()});
+  } else if(resource==='job-parts'){
+    const job_id=whole(Number(data.job_id),'Job',true),part_id=whole(Number(data.part_id),'Part',true),quantity=whole(Number(data.quantity),'Quantity',true);const job=state.jobs.find(x=>x.id===job_id),part=state.parts.find(x=>x.id===part_id);if(!job||!part)throw new Error('Job or part not found');if(job.status==='Closed'||state.invoices.some(x=>x.job_id===job.id))throw new Error('This job is closed or invoiced');if(part.quantity<quantity)throw new Error(`Only ${part.quantity} in stock`);part.quantity-=quantity;id=nextId(state.job_parts);state.job_parts.push({id,job_id,part_id,quantity,unit_price_cents:part.price_cents});state.stock_movements.unshift({id:nextId(state.stock_movements),part_id,change:-quantity,reason:`Job #${job_id}`,created_at:stamp()});
+  } else if(resource==='stock'){
+    const part_id=whole(Number(data.part_id),'Part',true),quantity=whole(Number(data.quantity),'Quantity',true),part=state.parts.find(x=>x.id===part_id);if(!part)throw new Error('Part not found');part.quantity+=quantity;id=nextId(state.stock_movements);state.stock_movements.unshift({id,part_id,change:quantity,reason:required(data,'reason'),created_at:stamp()});
+  } else if(resource==='invoices'){
+    const job_id=whole(Number(data.job_id),'Job',true),job=state.jobs.find(x=>x.id===job_id);if(!job)throw new Error('Job not found');if(state.invoices.some(x=>x.job_id===job_id))throw new Error('This job already has an invoice');const total_cents=job.labour_cents+state.job_parts.filter(x=>x.job_id===job_id).reduce((sum,x)=>sum+x.quantity*x.unit_price_cents,0);id=nextId(state.invoices);state.invoices.unshift({id,job_id,number:`PA-${String(job_id).padStart(6,'0')}`,total_cents,created_at:stamp()});
+  } else if(resource==='payments'){
+    const invoice_id=whole(Number(data.invoice_id),'Invoice',true),invoice=state.invoices.find(x=>x.id===invoice_id);if(!invoice)throw new Error('Invoice not found');const paid=state.payments.filter(x=>x.invoice_id===invoice_id).reduce((sum,x)=>sum+x.amount_cents,0),amount_cents=cents(data.amount,'Payment',true);if(amount_cents>invoice.total_cents-paid)throw new Error('Payment exceeds the outstanding balance');if(!['Cash','Card','Bank transfer'].includes(data.method))throw new Error('Invalid payment method');id=nextId(state.payments);state.payments.unshift({id,invoice_id,amount_cents,method:data.method,created_at:stamp()});
+  } else if(resource==='finance-records'){
+    const type=['Income','Expense'].includes(data.type)?data.type:null;if(!type)throw new Error('Choose Income or Expense');const record_date=required(data,'record_date'),amount_cents=cents(data.amount,'Amount',true);id=nextId(state.finance_records);state.finance_records.unshift({id,type,category:required(data,'category'),description:required(data,'description'),amount_cents,record_date,created_at:stamp()});
+  } else if(resource==='warranty-claims'){
+    const motorcycle_id=whole(Number(data.motorcycle_id),'Motorcycle',true);if(!state.motorcycles.some(x=>x.id===motorcycle_id))throw new Error('Motorcycle not found');const ticket_number=required(data,'ticket_number');if(state.warranty_claims.some(x=>String(x.ticket_number).toUpperCase()===ticket_number.toUpperCase()))throw new Error('Warranty ticket number already exists');id=nextId(state.warranty_claims);state.warranty_claims.unshift({id,motorcycle_id,ticket_number,part_name:required(data,'part_name'),issue:required(data,'issue'),claim_date:required(data,'claim_date'),status:'Open',notes:String(data.notes||'').trim(),created_at:stamp()});
+  } else if(resource==='carpet-products'){
+    const name=required(data,'name');if(state.carpet_products.some(x=>x.name.trim().toLowerCase()===name.toLowerCase()))throw new Error('A product with this name already exists');id=nextId(state.carpet_products);const price_cents=cents(data.price,'Price',true);state.carpet_products.unshift({id,name,price_cents,created_at:stamp()});const itemId=nextId(state.carpet_inventory);state.carpet_inventory.push({id:itemId,product_id:id,sku:`PRD-${String(id).padStart(4,'0')}`,name,description:'',supplier_id:null,quantity:0,cost_cents:0,selling_price_cents:price_cents,reorder_level:0,created_at:stamp()});
+  } else if(resource==='carpet-buyers'){
+    id=nextId(state.carpet_buyers);state.carpet_buyers.unshift({id,name:required(data,'name'),phone:required(data,'phone'),email:String(data.email||'').trim(),address:String(data.address||'').trim(),created_at:stamp()});
+  } else if(resource==='carpet-suppliers'){
+    id=nextId(state.carpet_suppliers);state.carpet_suppliers.unshift({id,name:required(data,'name'),phone:required(data,'phone'),email:String(data.email||'').trim(),address:String(data.address||'').trim(),notes:String(data.notes||'').trim(),created_at:stamp()});
+  } else if(resource==='carpet-inventory'){
+    const sku=required(data,'sku').toUpperCase();if(state.carpet_inventory.some(x=>x.sku.toUpperCase()===sku))throw new Error('Carpet SKU already exists');const supplier_id=data.supplier_id?whole(Number(data.supplier_id),'Supplier',true):null;if(supplier_id&&!state.carpet_suppliers.some(x=>x.id===supplier_id))throw new Error('Supplier not found');const quantity=whole(Number(data.quantity),'Quantity'),reorder_level=whole(Number(data.reorder_level),'Reorder level');id=nextId(state.carpet_inventory);state.carpet_inventory.push({id,sku,name:required(data,'name'),description:String(data.description||'').trim(),supplier_id,quantity,cost_cents:cents(data.cost,'Cost'),selling_price_cents:cents(data.selling_price,'Selling price'),reorder_level,created_at:stamp()});if(quantity)state.carpet_stock_movements.unshift({id:nextId(state.carpet_stock_movements),item_id:id,change:quantity,reason:'Opening balance',created_at:stamp()});
+  } else if(resource==='carpet-stock'){
+    const product_id=whole(Number(data.product_id),'Product',true),product=state.carpet_products.find(x=>x.id===product_id);if(!product)throw new Error('Product not found');let item=inventoryForProduct(state.carpet_inventory,product);if(!item){const itemId=nextId(state.carpet_inventory);item={id:itemId,product_id:product.id,sku:`PRD-${String(product.id).padStart(4,'0')}`,name:product.name,description:'',supplier_id:null,quantity:0,cost_cents:0,selling_price_cents:product.price_cents,reorder_level:0,created_at:stamp()};state.carpet_inventory.push(item);}const supplier_id=data.supplier_id?whole(Number(data.supplier_id),'Supplier',true):item.supplier_id||null;if(supplier_id&&!state.carpet_suppliers.some(x=>x.id===supplier_id))throw new Error('Supplier not found');const quantity=whole(Number(data.quantity),'Quantity',true);item.quantity+=quantity;item.product_id=product.id;item.name=product.name;item.selling_price_cents=product.price_cents;item.cost_cents=cents(data.cost??(item.cost_cents/100),'Cost');item.supplier_id=supplier_id;id=nextId(state.carpet_stock_movements);state.carpet_stock_movements.unshift({id,item_id:item.id,change:quantity,reason:required(data,'reason'),created_at:stamp()});
+  } else if(resource==='carpet-orders'){
+    const buyer_id=whole(Number(data.buyer_id),'Buyer',true);if(!state.carpet_buyers.some(x=>x.id===buyer_id))throw new Error('Buyer not found');const product_type=CARPET_TYPES.includes(data.product_type)?data.product_type:null;if(!product_type)throw new Error('Choose Carpet or Seat cover');const models=String(data.models||'').split('|').filter(x=>CARPET_MODELS.includes(x));if(!models.length)throw new Error('Choose at least one model');const model_quantities=parseModelQuantities(data.model_quantities,models),productQuantities=parseProductQuantities(data.product_quantities);if(!Object.keys(productQuantities).length)throw new Error('Choose at least one product and quantity');for(const [productIdText,qty] of Object.entries(productQuantities)){const product=state.carpet_products.find(x=>x.id===Number(productIdText));if(!product)throw new Error('Selected product no longer exists');const item=inventoryForProduct(state.carpet_inventory,product);if(!item||item.quantity<qty)throw new Error(`${product.name}: only ${item?.quantity||0} in stock`);}id=nextId(state.carpet_orders);state.carpet_orders.unshift({id,buyer_id,number:`CP-${String(id).padStart(6,'0')}`,status:'Open',product_type,models,model_quantities,labour_cents:cents(data.labour||0,'Labour'),special_notes:String(data.special_notes||'').trim(),order_date:required(data,'order_date'),created_at:stamp()});for(const [productIdText,qty] of Object.entries(productQuantities)){const product=state.carpet_products.find(x=>x.id===Number(productIdText)),item=inventoryForProduct(state.carpet_inventory,product);item.quantity-=qty;const lineId=nextId(state.carpet_order_items);state.carpet_order_items.push({id:lineId,order_id:id,product_id:product.id,item_id:item.id,quantity:qty,unit_price_cents:product.price_cents});state.carpet_stock_movements.unshift({id:nextId(state.carpet_stock_movements),item_id:item.id,change:-qty,reason:`Carpet order #${id}`,created_at:stamp()});}
+  } else if(resource==='carpet-order-items'){
+    const order_id=whole(Number(data.order_id),'Order',true),product_id=whole(Number(data.product_id),'Product',true),quantity=whole(Number(data.quantity),'Quantity',true),order=state.carpet_orders.find(x=>x.id===order_id),product=state.carpet_products.find(x=>x.id===product_id),item=inventoryForProduct(state.carpet_inventory,product);if(!order||!product||!item)throw new Error('Order or product not found');if(order.status==='Cancelled')throw new Error('Cancelled orders cannot be changed');if(item.quantity<quantity)throw new Error(`Only ${item.quantity} in stock`);item.quantity-=quantity;id=nextId(state.carpet_order_items);state.carpet_order_items.push({id,order_id,product_id,item_id:item.id,quantity,unit_price_cents:product.price_cents});state.carpet_stock_movements.unshift({id:nextId(state.carpet_stock_movements),item_id:item.id,change:-quantity,reason:`Carpet order #${order_id}`,created_at:stamp()});
+  } else if(resource==='carpet-finance-records'){
+    const type=['Income','Expense'].includes(data.type)?data.type:null;if(!type)throw new Error('Choose Income or Expense');id=nextId(state.carpet_finance_records);state.carpet_finance_records.unshift({id,type,category:required(data,'category'),description:required(data,'description'),amount_cents:cents(data.amount,'Amount',true),record_date:required(data,'record_date'),created_at:stamp()});
+  } else if(resource==='carpet-payments'){
+    const order_id=whole(Number(data.order_id),'Order',true),order=state.carpet_orders.find(x=>x.id===order_id);if(!order)throw new Error('Order not found');const lines=state.carpet_order_items.filter(x=>x.order_id===order_id),total=lines.reduce((sum,x)=>sum+x.quantity*x.unit_price_cents,0)+Number(order.labour_cents||0),paid=state.carpet_payments.filter(x=>x.order_id===order_id).reduce((sum,x)=>sum+x.amount_cents,0),amount_cents=cents(data.amount,'Payment',true);if(amount_cents>total-paid)throw new Error('Payment exceeds the outstanding balance');if(!['Cash','Card','Bank transfer'].includes(data.method))throw new Error('Invalid payment method');id=nextId(state.carpet_payments);state.carpet_payments.unshift({id,order_id,amount_cents,method:data.method,created_at:stamp()});
+  } else throw new Error('Unknown action');
+  return {id};
+}
+function panel(title, subtitle, body, action='') {
+  return `<div class="panel"><div class="panel-head"><div><h2>${title}</h2><p>${subtitle}</p></div>${action}</div>${body}</div>`;
+}
+function table(headings, body) {
+  return `<div class="table-wrap"><table><thead><tr>${headings.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+const badge = status => `<span class="badge ${status==='In progress'?'progress':status==='Ready'?'ready':status==='Closed'?'closed':''}">${safe(status)}</span>`;
+const b = (label, action, id) => `<button type="button" class="text-button" data-action="${action}" data-id="${id}">${label}</button>`;
+function selectOptions(items, label) { return items.map(item=>`<option value="${item.id}">${safe(label(item))}</option>`).join(''); }
+function matches(...values) {return values.some(value=>String(value ?? '').toLowerCase().includes(query));}
+const workTypes = ['Service','Repair','Electrical','Tyres / brakes','Battery','Accident repair','Inspection','Other'];
+const billingTypes = ['Free service','Paid service','Warranty'];
+function ordinal(value){const n=Number(value);if(!Number.isInteger(n)||n<1)return '';const mod100=n%100,mod10=n%10;const suffix=(mod100>=11&&mod100<=13)?'th':mod10===1?'st':mod10===2?'nd':mod10===3?'rd':'th';return `${n}${suffix}`;}
+function serviceLabel(j){const billing=j.billing_type||'Paid service',number=j.service_number?`${ordinal(j.service_number)} service`:'';return [billing,number].filter(Boolean).join(' · ');}
+function shareButton(label,action,id=''){return `<button type="button" class="button secondary share-only" data-action="${action}" ${id!==''?`data-id="${id}"`:''}>↗ ${label}</button>`;}
+async function shareText(title,text){if(navigator.share){try{await navigator.share({title,text});return;}catch(error){if(error?.name==='AbortError')return;}}try{await navigator.clipboard.writeText(text);toast('Share summary copied to clipboard');}catch{window.prompt('Copy this summary:',text);}}
+const DELETE_PASSWORD_HASH='eec3b02ba3f8d5d81271ddffda09d98af4769ff06a35219889cf12b4e6227ca8';
+async function sha256(value){const data=new TextEncoder().encode(value);const digest=await crypto.subtle.digest('SHA-256',data);return [...new Uint8Array(digest)].map(x=>x.toString(16).padStart(2,'0')).join('');}
+async function protectedDelete(label,route,after){const password=window.prompt(`Delete ${label}?\n\nEnter deletion password:`);if(password===null)return;const hash=await sha256(password);if(hash!==DELETE_PASSWORD_HASH){toast('Incorrect deletion password',true);return;}if(!confirm(`Permanently delete ${label}? This cannot be undone.`))return;try{await send(route,{},'DELETE');toast(`${label} deleted`);after?.();}catch(error){toast(error.message,true);}}
+const deleteButton=(label,action,id)=>`<button type="button" class="button danger-button" data-action="${action}" data-id="${id}">Delete ${safe(label)}</button>`;
+
+function monthKey(value){const d=new Date(value);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;}
+function currentMonthKey(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;}
+
+
+function couponDate(value){const text=String(value||'').slice(0,10);if(/^\d{4}-\d{2}-\d{2}$/.test(text))return text.replaceAll('-','/');if(!value)return '';const d=new Date(value);if(Number.isNaN(d.getTime()))return '';return `${d.getFullYear()}/${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}`;}
+function couponLogo(){return `<img class="coupon-yadea-exact" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Yadea_Logo.svg" alt="YADEA">`;}
+function couponHeaderInput(key,label,placeholder=''){return `<div class="coupon-line"><label>${safe(label)}</label><input type="text" data-coupon-setting="${safe(key)}" value="${safe(couponSettings[key]||'')}" placeholder="${safe(placeholder)}"></div>`;}
+function freeServiceJobs(){return state.jobs.filter(j=>{if(j.billing_type!=='Free service')return false;const d=String(j.service_date||j.created_at||'').slice(0,10);if(couponFrom&&d<couponFrom)return false;if(couponTo&&d>couponTo)return false;return true;}).sort((a,b)=>String(a.service_date||a.created_at).localeCompare(String(b.service_date||b.created_at))||a.id-b.id);}
+function couponSheet(pageRows,pageIndex,pageCount){
+  const rows=[];
+  for(let i=0;i<20;i++){
+    const j=pageRows[i],bike=j?state.motorcycles.find(x=>x.id===j.motorcycle_id):null;
+    if(j){
+      const remark=couponRemarks[String(j.id)]||'';
+      rows.push(`<tr><td>${i+1}</td><td><input class="coupon-cell-input" readonly value="${safe(couponDate(j.service_date||j.created_at))}"></td><td><input class="coupon-cell-input" readonly value="${safe(j.kilometers??'')}"></td><td><input class="coupon-cell-input" readonly value="${safe(bike?.chassis_number||'')}"></td><td><div class="coupon-regmotor"><strong>${safe(bike?.motor_number||'')}</strong></div></td><td><input class="coupon-cell-input" readonly value="${safe(couponDate(bike?.date_of_sale))}"></td><td><input class="coupon-cell-input" data-coupon-remark="${j.id}" value="${safe(remark)}"></td></tr>`);
+    }else rows.push(`<tr><td>${i+1}</td><td></td><td></td><td></td><td></td><td></td><td><input class="coupon-cell-input" value=""></td></tr>`);
+  }
+  return `<section class="coupon-sheet coupon-page-break"><div class="coupon-sheet-header"><div><div class="coupon-company"><div>${couponLogo()}<div class="coupon-company-details"><strong>Abans Auto (Pvt) Ltd.</strong><br>212, Negombo Road, Peliyagoda. Tel: 0112 007 000</div></div></div><div class="coupon-top-fields" style="margin-top:4mm"><div class="coupon-line"><label>NO. OF COUPONS</label><input type="text" readonly value="${pageRows.length}"></div>${couponHeaderInput('bank_account','BANK ACCOUNT NO:','Type bank account number')}${couponHeaderInput('bank_branch','BANK & BRANCH:','Type bank and branch')}</div></div><div><div class="coupon-title">FREE SERVICE COUPONS SUMMARY</div><div class="coupon-top-fields">${couponHeaderInput('dealer_stamp','SERVICE DEALER RUBBER STAMP:','Pathirana Auto')}${couponHeaderInput('month_year','MONTH AND YEAR:','e.g. September 2026')}</div></div></div><table class="coupon-table"><colgroup><col class="c-sr"><col class="c-date"><col class="c-kms"><col class="c-chassis"><col class="c-regmotor"><col class="c-sale"><col class="c-remarks"></colgroup><thead><tr><th rowspan="2">SR NO</th><th colspan="2">FREE SERVICE</th><th rowspan="2">CHASSIS NO.</th><th rowspan="2">MOTOR NO.</th><th rowspan="2">DATE OF SALE</th><th rowspan="2">REMARKS</th></tr><tr><th class="subhead">Date</th><th class="subhead">kms</th></tr></thead><tbody>${rows.join('')}</tbody></table>${pageCount>1?`<div class="coupon-mini">Sheet ${pageIndex+1} of ${pageCount}</div>`:''}</section>`;
+}
+function freeServiceCoupons(){
+  const jobs=freeServiceJobs(),pages=[];for(let i=0;i<Math.max(1,Math.ceil(jobs.length/20));i++)pages.push(jobs.slice(i*20,i*20+20));
+  const missing=jobs.filter(j=>{const bike=state.motorcycles.find(x=>x.id===j.motorcycle_id);return !j.service_date||j.kilometers===undefined||j.kilometers===null||!bike?.motor_number||!bike?.chassis_number||!bike?.date_of_sale;}).length;
+  return `<div class="coupon-toolbar"><div><p><strong>${jobs.length}</strong> free-service job card${jobs.length===1?'':'s'} included automatically · up to 20 coupons per sheet.</p></div><div class="toolbar"><label class="field" style="margin:0">From<input id="coupon-filter-from" type="date" value="${safe(couponFrom)}" style="margin-top:4px;padding:8px"></label><label class="field" style="margin:0">To<input id="coupon-filter-to" type="date" value="${safe(couponTo)}" style="margin-top:4px;padding:8px"></label><button class="button secondary" type="button" data-action="print-coupons">Print / Save as PDF</button><button class="button primary" type="button" data-action="download-coupons-pdf">↓ Download PDF</button></div></div><p class="coupon-form-note"><strong>Auto-filled:</strong> free-service date and kilometres from the job card; chassis, motor number and date of sale from the motorcycle record. Coupon count is automatic. Bank details, month/year, dealer stamp and remarks stay typeable.${missing?` <strong>${missing} free-service record${missing===1?' is':'s are'} missing one or more required bike/job details; edit those records to complete the form.</strong>`:''}</p><div class="coupon-preview-wrap"><div id="coupon-pdf-area" class="coupon-pdf-area">${pages.map((rows,i)=>couponSheet(rows,i,pages.length)).join('')}</div></div>`;
+}
+async function downloadCouponPdf(){const area=document.querySelector('#coupon-pdf-area');if(!area)return;if(!window.html2pdf){toast('PDF library could not load. Use Print / Save as PDF instead.',true);window.print();return;}const filename=`YADEA-free-service-coupons-${new Date().toISOString().slice(0,10)}.pdf`;toast('Preparing PDF…');try{await window.html2pdf().set({margin:[5,5,5,5],filename,image:{type:'jpeg',quality:.98},html2canvas:{scale:2,useCORS:true,backgroundColor:'#ffffff',scrollX:0,scrollY:0},jsPDF:{unit:'mm',format:'a4',orientation:'landscape'},pagebreak:{mode:['css','legacy']}}).from(area).save();toast('PDF downloaded');}catch(error){toast('PDF download failed. Use Print / Save as PDF instead.',true);}}
+function printCouponSheets(){const area=document.querySelector('#coupon-pdf-area');if(!area)return;const popup=window.open('','_blank');if(!popup){toast('Allow pop-ups to print the coupon form.',true);return;}const style=document.querySelector('style')?.textContent||'';popup.document.open();popup.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>YADEA Free Service Coupons Summary</title><style>${style}
+@page{size:A4 landscape;margin:5mm}body{margin:0;background:#fff}.coupon-sheet{box-shadow:none}.coupon-page-break:last-child{page-break-after:auto}</style></head><body>${area.outerHTML}<script>window.onload=()=>{setTimeout(()=>window.print(),250)}<\/script></body></html>`);popup.document.close();}
+
+function dashboard() {
+  const active = state.jobs.filter(j=>j.status!=='Closed');
+  const low = state.parts.filter(p=>p.quantity<=p.reorder_level);
+  const balance = state.invoices.reduce((sum,i)=>sum+i.total_cents-i.paid_cents,0);
+  const month=currentMonthKey();
+  const collected=state.payments.filter(p=>monthKey(p.created_at)===month).reduce((s,p)=>s+p.amount_cents,0);
+  const manualIncome=state.finance_records.filter(r=>r.type==='Income'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0);
+  const expenses=state.finance_records.filter(r=>r.type==='Expense'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0);
+  const cards = [
+    ['Open job cards',active.length,'Currently in the workshop','▤'],
+    ['Ready for pickup',active.filter(j=>j.status==='Ready').length,'Waiting for collection','↗'],
+    ['Low stock items',low.length,'At or below reorder level','▦'],
+    ['This month',money(collected+manualIncome-expenses),'Income minus expenses','◉'],
+    ['Outstanding',money(balance),'Unpaid invoice balance','◎']
+  ];
+  const stats = `<div class="grid-stats">${cards.map(([title,value,desc,icon])=>`<div class="stat"><div class="label">${title}<span class="symbol">${icon}</span></div><strong>${value}</strong><small>${desc}</small></div>`).join('')}</div>`;
+  const jobRows = active.slice(0,6).map(j=>`<tr><td><strong>#${j.id}</strong><small>${date(j.created_at)}</small></td><td><strong>${safe(j.registration)}</strong><small>${safe(j.make)} ${safe(j.model)}</small></td><td>${safe(j.customer_name)}</td><td>${badge(j.status)}</td><td>${b('View','job',j.id)}</td></tr>`).join('');
+  const jobs = panel('Active job cards','Your current workshop queue',jobRows?table(['Job','Motorcycle','Customer','Status',''],jobRows):empty('No active jobs','Create a job card to start tracking work.'),`<button class="link" data-page="jobs">View all →</button>`);
+  const lowRows = low.slice(0,6).map(p=>`<div class="summary-line"><div><strong>${safe(p.name)}</strong><small style="display:block;color:#8b998d">${safe(p.sku)}</small></div><span class="badge low">${p.quantity} left</span></div>`).join('');
+  const stock = panel('Stock attention','Items to reorder',lowRows||empty('Stock looks good','Nothing is below its reorder level.'),`<button class="link" data-page="parts">Inventory →</button>`);
+  return stats + `<div class="two-col">${jobs}${stock}</div>`;
+}
+
+function customers() {
+  const list = state.customers.filter(c=>matches(c.name,c.phone,c.email));
+  const content = list.length?table(['Customer','Contact','Motorcycles','Added',''],list.map(c=>`<tr><td><strong>${safe(c.name)}</strong></td><td>${safe(c.phone)}<small>${safe(c.email)}</small></td><td>${state.motorcycles.filter(m=>m.customer_id===c.id).length}</td><td>${date(c.created_at)}</td><td><div class="record-actions">${b('Add motorcycle','bike-for',c.id)} ${b('Delete','delete-customer',c.id)}</div></td></tr>`).join('')):empty('No customers found','Add a customer or change the search.');
+  return section('Customer records',`${state.customers.length} total customers`,'Add customer','customer',content);
+}
+function motorcycles() {
+  const list=state.motorcycles.filter(m=>matches(m.registration,m.make,m.model,m.customer_name,m.motor_number,m.chassis_number));
+  const content=list.length?table(['Registration / IDs','Motorcycle','Owner','Date of sale','Jobs',''],list.map(m=>`<tr><td class="motor-id-lines"><strong>${safe(m.registration)}</strong><small>Motor: ${safe(m.motor_number||'—')}</small><small>Chassis: ${safe(m.chassis_number||'—')}</small></td><td>${safe(m.make)} ${safe(m.model)}<small>${m.year || 'Year unspecified'}</small></td><td>${safe(m.customer_name)}</td><td>${m.date_of_sale?date(m.date_of_sale):'—'}</td><td>${state.jobs.filter(j=>j.motorcycle_id===m.id).length}</td><td><div class="record-actions">${b('New job','job-for',m.id)} ${b('Warranty','warranty-for',m.id)} ${b('Edit','edit-bike',m.id)} ${b('Delete','delete-bike',m.id)}</div></td></tr>`).join('')):empty('No motorcycles found','Add a motorcycle after adding its owner.');
+  return section('Motorcycle records',`${state.motorcycles.length} registered motorcycles`,'Add motorcycle','bike',content);
+}
+function jobs() {
+  let list=state.jobs.filter(j=>matches(j.id,j.registration,j.customer_name,j.complaint,j.status,j.work_type,j.billing_type,j.service_number));
+  if(jobTypeFilter!=='all')list=list.filter(j=>(j.work_type||'Service')===jobTypeFilter);
+  if(jobBillingFilter!=='all')list=list.filter(j=>(j.billing_type||'Paid service')===jobBillingFilter);
+  list=[...list].sort((a,b)=>{if(jobSort==='oldest')return new Date(a.created_at)-new Date(b.created_at);if(jobSort==='work')return String(a.work_type||'').localeCompare(String(b.work_type||''));if(jobSort==='billing')return String(a.billing_type||'').localeCompare(String(b.billing_type||''));if(jobSort==='status')return String(a.status).localeCompare(String(b.status));return new Date(b.created_at)-new Date(a.created_at);});
+  const rows=list.map(j=>`<tr><td><strong>#${j.id}</strong><small>${date(j.service_date||j.created_at)}${j.kilometers!==undefined&&j.kilometers!==null?` · ${j.kilometers.toLocaleString()} km`:''}</small></td><td><strong>${safe(j.registration)}</strong><small>${safe(j.customer_name)}</small></td><td><strong>${safe(j.work_type||'Service')}</strong><div class="service-meta"><span class="meta-chip ${(j.billing_type||'Paid service').toLowerCase().includes('free')?'free':(j.billing_type||'').toLowerCase().includes('warranty')?'warranty':'paid'}">${safe(serviceLabel(j))}</span></div></td><td title="${safe(j.complaint)}">${safe(j.complaint.slice(0,45))}${j.complaint.length>45?'…':''}</td><td class="job-total">${money(j.labour_cents+j.parts_cents)}</td><td>${badge(j.status)}</td><td>${b('Open','job',j.id)}</td></tr>`).join('');
+  const controls=`<div class="section-bar"><p>${state.jobs.length} jobs recorded · ${list.length} shown</p><div class="toolbar"><input class="search" id="search" type="search" placeholder="Search job cards…" value="${safe(query)}" aria-label="Search job cards"><div class="filters"><select id="job-type-filter" aria-label="Filter by type of work"><option value="all">All work types</option>${workTypes.map(x=>`<option value="${safe(x)}" ${jobTypeFilter===x?'selected':''}>${safe(x)}</option>`).join('')}</select><select id="job-billing-filter" aria-label="Filter by billing type"><option value="all">Free + paid</option>${billingTypes.map(x=>`<option value="${safe(x)}" ${jobBillingFilter===x?'selected':''}>${safe(x)}</option>`).join('')}</select><select id="job-sort" aria-label="Sort job cards"><option value="newest" ${jobSort==='newest'?'selected':''}>Newest first</option><option value="oldest" ${jobSort==='oldest'?'selected':''}>Oldest first</option><option value="work" ${jobSort==='work'?'selected':''}>Type of work</option><option value="billing" ${jobSort==='billing'?'selected':''}>Free / paid</option><option value="status" ${jobSort==='status'?'selected':''}>Status</option></select></div><button class="button primary" data-action="job-new">＋ New job card</button></div></div>`;
+  const content=rows?table(['Job','Motorcycle / owner','Work / service','Reported issue','Charges','Status',''],rows):empty('No job cards found','Change the filters or create a new job card.');
+  return controls+panel('Workshop job cards','Sort by date, work type, free/paid service or status',content);
+}
+
+function parts() {
+  const list=state.parts.filter(p=>matches(p.sku,p.name));
+  const content=list.length?table(['Part','SKU','Stock','Selling price','Reorder at',''],list.map(p=>`<tr><td><strong>${safe(p.name)}</strong></td><td>${safe(p.sku)}</td><td>${p.quantity<=p.reorder_level?`<span class="badge low">${p.quantity} · Low</span>`:p.quantity}</td><td>${money(p.price_cents)}</td><td>${p.reorder_level}</td><td><div class="record-actions">${b('Receive stock','restock',p.id)} ${b('Delete','delete-part',p.id)}</div></td></tr>`).join('')):empty('No parts found','Add a part to start stock tracking.');
+  const movements=state.stock_movements.slice(0,6).map(m=>`<div class="activity"><span class="activity-icon">${m.change>0?'＋':'−'}</span><div><p>${safe(m.name)} · ${m.change>0?'+':''}${m.change}</p><small>${safe(m.reason)} · ${date(m.created_at)}</small></div></div>`).join('');
+  return section('Spare parts',`${state.parts.length} catalogued parts`,'Add part','part',content)+panel('Recent stock movements','Every stock change is recorded',movements||empty('No movements yet','Stock activity will appear here.'));
+}
+function invoices() {
+  const filtered=state.invoices.filter(i=>matches(i.number,i.customer_name,i.registration));
+  const content=filtered.map(i=>`<div class="invoice-card"><div><strong>${safe(i.number)}</strong> ${i.paid_cents===i.total_cents?'<span class="badge ready">Paid</span>':'<span class="badge progress">Balance due</span>'}<p>${safe(i.customer_name)} · ${safe(i.registration)} · ${date(i.created_at)}</p>${b('View invoice','invoice',i.id)}</div><div class="total">${money(i.total_cents)}<small>${money(i.total_cents-i.paid_cents)} outstanding</small></div></div>`).join('');
+  return section('Invoices & payments',`${state.invoices.length} invoices issued`,null,null,content||empty('No invoices found','Create an invoice from a job card.'));
+}
+
+function finance() {
+  const month=currentMonthKey();
+  const serviceIncome=state.payments.filter(p=>monthKey(p.created_at)===month).reduce((s,p)=>s+p.amount_cents,0);
+  const manualIncome=state.finance_records.filter(r=>r.type==='Income'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0);
+  const expenses=state.finance_records.filter(r=>r.type==='Expense'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0);
+  const totalIncome=serviceIncome+manualIncome,net=totalIncome-expenses;
+  const outstanding=state.invoices.reduce((s,i)=>s+i.total_cents-i.paid_cents,0);
+  const cards=`<div class="grid-stats">${[
+    ['Collected service income',money(serviceIncome),'Invoice payments this month','＋'],
+    ['Other income',money(manualIncome),'Manual income entries this month','＋'],
+    ['Expenses',money(expenses),'Recorded expenses this month','−'],
+    ['Net cash flow',money(net),'Income minus recorded expenses','◉'],
+    ['Outstanding',money(outstanding),'Issued but not yet collected','◎']
+  ].map(([title,value,desc,icon])=>`<div class="stat"><div class="label">${title}<span class="symbol">${icon}</span></div><strong>${value}</strong><small>${desc}</small></div>`).join('')}</div>`;
+  const entries=[...state.finance_records].sort((a,b)=>new Date(b.record_date)-new Date(a.record_date)||b.id-a.id);
+  const entryHtml=entries.slice(0,30).map(r=>`<div class="finance-entry"><div><strong>${safe(r.description)}</strong><small>${safe(r.category)} · ${safe(r.type)} · ${date(r.record_date)}</small></div><div class="record-actions"><div class="${r.type==='Income'?'amount-positive':'amount-negative'}">${r.type==='Income'?'+':'−'} ${money(r.amount_cents)}</div>${b('Delete','delete-finance',r.id)}</div></div>`).join('');
+  const recentPayments=[...state.payments].sort((a,b)=>new Date(b.created_at)-new Date(a.created_at)).slice(0,8).map(p=>{const invoice=state.invoices.find(i=>i.id===p.invoice_id);return `<div class="finance-entry"><div><strong>${safe(invoice?.number||'Invoice payment')}</strong><small>${safe(invoice?.customer_name||'Customer')} · ${safe(p.method)} · ${date(p.created_at)}</small></div><div class="amount-positive">+ ${money(p.amount_cents)}</div></div>`;}).join('');
+  const actions=`<div class="toolbar"><button class="button primary" data-action="finance-income">＋ Income</button><button class="button secondary" data-action="finance-expense">− Expense</button>${shareButton('Share monthly summary','share-finance')}</div>`;
+  return `<div class="section-bar"><p>Cash-flow tracker · ${new Date().toLocaleDateString('en-LK',{month:'long',year:'numeric'})}</p>${actions}</div>${cards}<div class="two-col">${panel('Income & expense entries','Manual workshop cash-flow records',entryHtml||empty('No finance entries yet','Add expenses or non-invoice income here.'))}${panel('Recent invoice payments','Income recorded automatically when payments are received',recentPayments||empty('No payments yet','Recorded invoice payments will appear here.'))}</div><p class="share-note">Finance totals are management figures, not a configured tax or statutory accounting system. Parts purchases should be entered as expenses when you pay the supplier.</p>`;
+}
+
+
+function parseModelQuantities(raw,models){let source={};try{source=JSON.parse(String(raw||'{}'))||{};}catch{}const result={};for(const model of models){result[model]=whole(Number(source[model]??1),`${model} quantity`,true);}return result;}
+function modelQty(order,model){const saved=Number(order?.model_quantities?.[model]);return Number.isInteger(saved)&&saved>0?saved:((order?.models||[]).includes(model)?1:0);}
+function modelSummary(order){return (order?.models||[]).map(model=>`${model} × ${modelQty(order,model)}`).join(', ');}
+function modelPicker(selected=[],quantities={}){const chosen=new Set(Array.isArray(selected)?selected:[]);const qty=quantities&&typeof quantities==='object'?quantities:{};const normalized={};for(const model of chosen){const n=Number(qty[model]);normalized[model]=Number.isInteger(n)&&n>0?n:1;}return `<div class="field">Bike model(s)<span class="model-picker-note">Select the required models and enter the quantity for each one</span><div class="model-picker">${CARPET_MODELS.map(model=>{const checked=chosen.has(model),value=checked?(normalized[model]||1):'';return `<div class="model-choice ${checked?'selected':''}"><label class="model-check"><input type="checkbox" data-carpet-model value="${safe(model)}" ${checked?'checked':''}><span>${safe(model)}</span></label><label class="model-qty">Qty <input type="number" min="1" step="1" inputmode="numeric" data-carpet-model-qty data-model="${safe(model)}" value="${safe(value)}" ${checked?'':'disabled'}></label></div>`;}).join('')}</div><input type="hidden" name="models" data-model-value value="${safe([...chosen].join('|'))}"><input type="hidden" name="model_quantities" data-model-quantities value="${safe(JSON.stringify(normalized))}"></div>`;}
+function syncModelPicker(picker){if(!picker)return;const models=[],quantities={};picker.querySelectorAll('.model-choice').forEach(row=>{const box=row.querySelector('[data-carpet-model]'),qty=row.querySelector('[data-carpet-model-qty]');if(!box||!qty)return;if(box.checked){let n=Math.floor(Number(qty.value)||1);if(n<1)n=1;qty.value=n;qty.disabled=false;row.classList.add('selected');models.push(box.value);quantities[box.value]=n;}else{qty.disabled=true;qty.value='';row.classList.remove('selected');}});const wrap=picker.parentElement;const modelField=wrap?.querySelector('[data-model-value]'),qtyField=wrap?.querySelector('[data-model-quantities]');if(modelField)modelField.value=models.join('|');if(qtyField)qtyField.value=JSON.stringify(quantities);}
+
+function productOrderPicker(){const products=[...state.carpet_products].sort((a,b)=>a.name.localeCompare(b.name));if(!products.length)return `<p class="hint">Add products first. Orders use the Products list for names, prices and stock.</p>`;return `<div class="field">Products & quantities<span class="product-picker-note">Prices come directly from Products. Stock is deducted when you save the order.</span><div class="product-picker">${products.map(p=>{const item=inventoryForProduct(state.carpet_inventory,p),stock=Number(item?.quantity||0);return `<div class="product-pick-row"><label class="product-pick-main"><input type="checkbox" data-order-product value="${p.id}" ${stock<1?'disabled':''}><span><strong>${safe(p.name)}</strong><small>${stock} in stock${stock<1?' · out of stock':''}</small></span></label><div class="product-pick-price">${money(p.price_cents)}</div><label class="product-pick-qty">Qty <input type="number" min="1" step="1" inputmode="numeric" data-order-product-qty data-product-id="${p.id}" value="" disabled></label></div>`;}).join('')}</div><input type="hidden" name="product_quantities" data-product-quantities value="{}"></div>`;}
+function syncProductOrderPicker(root){if(!root)return;const quantities={};root.querySelectorAll('.product-pick-row').forEach(row=>{const box=row.querySelector('[data-order-product]'),qty=row.querySelector('[data-order-product-qty]');if(!box||!qty)return;if(box.checked&&!box.disabled){let n=Math.floor(Number(qty.value)||1);if(n<1)n=1;qty.value=n;qty.disabled=false;quantities[box.value]=n;}else{qty.value='';qty.disabled=true;}});const hidden=root.parentElement?.querySelector('[data-product-quantities]');if(hidden)hidden.value=JSON.stringify(quantities);}
+function warranty(){
+  const list=state.warranty_claims.filter(w=>matches(w.ticket_number,w.part_name,w.issue,w.status,w.registration,w.motor_number,w.chassis_number,w.customer_name));
+  list.sort((a,b)=>new Date(b.claim_date||b.created_at)-new Date(a.claim_date||a.created_at)||b.id-a.id);
+  const cards=list.map(w=>`<div class="warranty-card"><div><strong>${safe(w.ticket_number)}</strong> <span class="badge ${w.status==='Completed'?'ready':w.status==='Rejected'?'low':w.status==='Approved'?'paid':'progress'}">${safe(w.status)}</span><p><strong>${safe(w.registration)}</strong> · ${safe(w.make)} ${safe(w.model)} · ${safe(w.customer_name)}</p><small>Part: ${safe(w.part_name)} · Claim date: ${date(w.claim_date||w.created_at)}</small><small>Issue: ${safe(w.issue)}</small></div><div class="warranty-meta"><small>Motor: ${safe(w.motor_number||'—')}</small><small>Chassis: ${safe(w.chassis_number||'—')}</small><div class="record-actions">${b('Edit','edit-warranty',w.id)} ${shareButton('Share','share-warranty',w.id)} ${b('Delete','delete-warranty',w.id)}</div></div></div>`).join('');
+  return section('Warranty claims',`${state.warranty_claims.length} warranty record${state.warranty_claims.length===1?'':'s'}`,'Add warranty claim','warranty-new',cards||empty('No warranty claims yet','Register the motorcycle first, then add it here.'));
+}
+function carpetBanner(){return `<div class="carpet-banner"><div><strong>Pathirana Carpets</strong><p>Products drive stock and order pricing. Carpet finances stay completely separate from workshop accounts.</p></div><div class="carpet-mark">▧</div></div>`;}
+function carpetStatus(o){if(o.status==='Cancelled')return '<span class="badge cancelled">Cancelled</span>';if(o.total_cents>0&&o.paid_cents>=o.total_cents)return '<span class="badge paid">Paid</span>';return `<span class="badge outstanding">${o.paid_cents?'Part paid':'Outstanding'}</span>`;}
+function carpetOrderCards(list){return list.map(o=>`<div class="carpet-card"><div><strong>${safe(o.number||`CP-${String(o.id).padStart(6,'0')}`)}</strong> ${carpetStatus(o)}<p>${safe(o.buyer_name)} · ${date(o.order_date||o.created_at)} · ${safe(o.status||'Open')}</p><div class="order-tags"><span class="order-tag">${safe(o.product_type||'Carpet')}</span>${(o.models||[]).map(m=>`<span class="order-tag">${safe(m)} × ${modelQty(o,m)}</span>`).join('')}</div><div class="record-actions">${b('Open','carpet-order',o.id)} ${shareButton('Share','share-carpet-order',o.id)}</div></div><div class="carpet-total">${money(o.total_cents)}<small>${money(o.balance_cents)} outstanding</small></div></div>`).join('');}
+function carpets(){
+  const outstanding=state.carpet_orders.reduce((sum,o)=>sum+o.balance_cents,0),paid=state.carpet_payments.reduce((sum,p)=>sum+p.amount_cents,0),low=state.carpet_products.filter(p=>p.stock_quantity<=p.reorder_level).length,month=currentMonthKey(),expenses=state.carpet_finance_records.filter(r=>r.type==='Expense'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0),otherIncome=state.carpet_finance_records.filter(r=>r.type==='Income'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0),monthPayments=state.carpet_payments.filter(p=>monthKey(p.created_at)===month).reduce((s,p)=>s+p.amount_cents,0);
+  const cards=`<div class="grid-stats">${[['Products',state.carpet_products.length,'Master catalogue','◇'],['Stock units',state.carpet_products.reduce((s,p)=>s+Number(p.stock_quantity||0),0),'Inventory from products','▦'],['Orders',state.carpet_orders.length,'All carpet orders','▤'],['Outstanding',money(outstanding),'Still to collect','◎'],['This month net',money(monthPayments+otherIncome-expenses),'Carpet cash flow','◉'],['Low stock',low,'At or below reorder level','!']].map(([title,value,desc,icon])=>`<div class="stat"><div class="label">${title}<span class="symbol">${icon}</span></div><strong>${value}</strong><small>${desc}</small></div>`).join('')}</div>`;
+  const recent=[...state.carpet_orders].sort((a,b)=>new Date(b.created_at)-new Date(a.created_at)).slice(0,6);
+  return carpetBanner()+cards+panel('Recent carpet orders','Latest activity',carpetOrderCards(recent)||empty('No carpet orders yet','Add products, receive stock, add a buyer, then create an order.'),`<button class="link" data-page="carpet-orders">View orders →</button>`);
+}
+function carpetProducts(){
+  const list=[...state.carpet_products].filter(x=>matches(x.name,x.price_cents,x.sku)).sort((a,b)=>a.name.localeCompare(b.name));
+  const cards=list.map(x=>`<article class="product-card"><div><div class="product-card-top"><div><h3>${safe(x.name)}</h3><div class="product-count-note">${safe(x.sku)} · catalogue product</div></div><div class="product-icon">◇</div></div><div class="product-price">${money(x.price_cents)}</div><div class="catalog-stock"><span class="stock-pill ${x.stock_quantity<=x.reorder_level?'low':''}">${x.stock_quantity} in stock</span><span class="stock-pill">Cost ${money(x.cost_cents)}</span></div></div><div class="record-actions">${b('Receive stock','carpet-restock',x.id)} ${b('Stock settings','carpet-stock-settings',x.id)} ${b('Edit','edit-carpet-product',x.id)} ${b('Delete','delete-carpet-product',x.id)}</div></article>`).join('');
+  return carpetBanner()+section('Products',`${state.carpet_products.length} product${state.carpet_products.length===1?'':'s'} · every product automatically has an inventory record`,'Add product','carpet-product',cards?`<div class="product-grid">${cards}</div>`:empty('No products yet','Add a product name and price. Its stock record is created automatically.'));
+}
+function carpetInventory(){
+  const list=[...state.carpet_products].filter(p=>matches(p.name,p.sku,p.supplier_name)).sort((a,b)=>a.name.localeCompare(b.name));
+  const rows=list.map(p=>`<tr><td><div class="inventory-product"><span class="inventory-product-mark">◇</span><div><strong>${safe(p.name)}</strong><small>${safe(p.sku)}</small></div></div></td><td>${p.stock_quantity<=p.reorder_level?`<span class="badge low">${p.stock_quantity} · Low</span>`:p.stock_quantity}</td><td><strong>${money(p.price_cents)}</strong></td><td>${money(p.cost_cents)}</td><td>${safe(p.supplier_name)}</td><td>${p.reorder_level}</td><td><div class="record-actions">${b('Receive stock','carpet-restock',p.id)} ${b('Settings','carpet-stock-settings',p.id)}</div></td></tr>`).join('');
+  const movements=state.carpet_stock_movements.slice(0,10).map(m=>`<div class="activity"><span class="activity-icon">${m.change>0?'＋':'−'}</span><div><p>${safe(m.item_name)} · ${m.change>0?'+':''}${m.change}</p><small>${safe(m.reason)} · ${date(m.created_at)}</small></div></div>`).join('');
+  return carpetBanner()+section('Inventory from products',`${state.carpet_products.length} catalogue products · stock is managed from the product list`,'Add product','carpet-product',rows?table(['Product','Stock','Selling price','Cost','Supplier','Reorder at',''],rows):empty('No products yet','Create a product first; inventory is created from it automatically.'))+panel('Recent stock movements','Every receive/order/return movement is recorded',movements||empty('No movements yet','Stock activity will appear here.'));
+}
+function carpetOrders(filter='all'){
+  let list=state.carpet_orders.filter(o=>matches(o.number,o.buyer_name,o.buyer_phone,o.status,o.special_notes,o.product_type,...(o.models||[])));
+  if(filter==='outstanding')list=list.filter(o=>o.balance_cents>0&&o.status!=='Cancelled');if(filter==='paid')list=list.filter(o=>o.total_cents>0&&o.paid_cents>=o.total_cents&&o.status!=='Cancelled');
+  list.sort((a,b)=>new Date(b.order_date||b.created_at)-new Date(a.order_date||a.created_at)||b.id-a.id);
+  const label=filter==='outstanding'?'Outstanding carpet orders':filter==='paid'?'Paid carpet orders':'Carpet orders';
+  return carpetBanner()+section(label,`${list.length} shown`,filter==='all'?'New order':null,filter==='all'?'carpet-order-new':null,carpetOrderCards(list)||empty(`No ${filter==='all'?'orders':filter+' orders'} found`,'Records will appear here when available.'));
+}
+function carpetFinance(){
+  const month=currentMonthKey(),orderIncome=state.carpet_payments.filter(p=>monthKey(p.created_at)===month).reduce((s,p)=>s+p.amount_cents,0),manualIncome=state.carpet_finance_records.filter(r=>r.type==='Income'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0),expenses=state.carpet_finance_records.filter(r=>r.type==='Expense'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0),net=orderIncome+manualIncome-expenses;
+  const cards=`<div class="carpet-finance-grid"><div class="carpet-finance-card"><small>Order payments</small><strong>${money(orderIncome)}</strong></div><div class="carpet-finance-card"><small>Other income</small><strong>${money(manualIncome)}</strong></div><div class="carpet-finance-card"><small>Expenses</small><strong>${money(expenses)}</strong></div><div class="carpet-finance-card"><small>Net cash flow</small><strong>${money(net)}</strong></div></div>`;
+  const entries=[...state.carpet_finance_records].sort((a,b)=>new Date(b.record_date)-new Date(a.record_date)||b.id-a.id).map(r=>`<div class="finance-entry"><div><strong>${safe(r.description)}</strong><small>${safe(r.category)} · ${safe(r.type)} · ${date(r.record_date)}</small></div><div class="record-actions"><div class="${r.type==='Income'?'amount-positive':'amount-negative'}">${r.type==='Income'?'+':'−'} ${money(r.amount_cents)}</div>${b('Delete','delete-carpet-finance',r.id)}</div></div>`).join('');
+  const payments=[...state.carpet_payments].sort((a,b)=>new Date(b.created_at)-new Date(a.created_at)).slice(0,12).map(p=>{const o=state.carpet_orders.find(x=>x.id===p.order_id);return `<div class="finance-entry"><div><strong>${safe(o?.number||'Order payment')}</strong><small>${safe(o?.buyer_name||'Buyer')} · ${safe(p.method)} · ${date(p.created_at)}</small></div><div class="amount-positive">+ ${money(p.amount_cents)}</div></div>`;}).join('');
+  const actions=`<div class="toolbar"><button class="button primary" data-action="carpet-finance-income">＋ Income</button><button class="button secondary" data-action="carpet-finance-expense">− Expense</button>${shareButton('Share monthly summary','share-carpet-finance')}</div>`;
+  return carpetBanner()+`<div class="section-bar"><p>Carpet business cash flow · ${new Date().toLocaleDateString('en-LK',{month:'long',year:'numeric'})}</p>${actions}</div>${cards}<div class="two-col">${panel('Income & expenses','Labour, material, delivery and other carpet-business costs',entries||empty('No manual entries yet','Add labour, material, delivery or other expenses here.'))}${panel('Order payments','Recorded automatically when carpet-order payments are received',payments||empty('No order payments yet','Payments will appear here automatically.'))}</div><p class="share-note">Order payments are automatic income. Manual expenses are cash-flow management records, not a configured tax/accounting system.</p>`;
+}
+function carpetBuyers(){const list=state.carpet_buyers.filter(x=>matches(x.name,x.phone,x.email,x.address));const rows=list.map(x=>`<tr><td><strong>${safe(x.name)}</strong><small>${safe(x.address||'')}</small></td><td>${safe(x.phone)}<small>${safe(x.email||'')}</small></td><td>${state.carpet_orders.filter(o=>o.buyer_id===x.id).length}</td><td><div class="record-actions">${b('New order','carpet-order-for',x.id)} ${b('Delete','delete-carpet-buyer',x.id)}</div></td></tr>`).join('');return carpetBanner()+section('Carpet buyers',`${state.carpet_buyers.length} buyers`,'Add buyer','carpet-buyer',rows?table(['Buyer','Contact','Orders',''],rows):empty('No buyers found','Add the buyer before creating an order.'));}
+function carpetSuppliers(){const list=state.carpet_suppliers.filter(x=>matches(x.name,x.phone,x.email,x.address,x.notes));const rows=list.map(x=>`<tr><td><strong>${safe(x.name)}</strong><small>${safe(x.notes||'')}</small></td><td>${safe(x.phone)}<small>${safe(x.email||'')}</small></td><td>${safe(x.address||'')}</td><td>${state.carpet_inventory.filter(i=>i.supplier_id===x.id).length}</td><td>${b('Delete','delete-carpet-supplier',x.id)}</td></tr>`).join('');return carpetBanner()+section('Carpet suppliers',`${state.carpet_suppliers.length} suppliers`,'Add supplier','carpet-supplier',rows?table(['Supplier','Contact','Address','Stock items',''],rows):empty('No suppliers found','Add carpet suppliers to link them to stock.'));}
+function carpetOrderDetail(id){
+  const o=state.carpet_orders.find(x=>x.id===id);if(!o)return carpetOrders();const buyer=state.carpet_buyers.find(x=>x.id===o.buyer_id),lines=state.carpet_order_items.filter(x=>x.order_id===id),pays=state.carpet_payments.filter(x=>x.order_id===id);
+  const lineRows=lines.map(line=>`<tr><td><strong>${safe(line.item_name)}</strong><small>${safe(line.sku)}</small></td><td>${line.quantity}</td><td>${money(line.unit_price_cents)}</td><td>${money(line.quantity*line.unit_price_cents)}</td><td>${b('Return / delete','delete-carpet-line',line.id)}</td></tr>`).join('');
+  const paymentRows=pays.map(p=>`<div class="activity"><span class="activity-icon">✓</span><div style="flex:1"><p>${money(p.amount_cents)} · ${safe(p.method)}</p><small>${date(p.created_at)}</small></div>${b('Delete','delete-carpet-payment',p.id)}</div>`).join('');
+  const actions=`<div class="toolbar">${b('Edit order','edit-carpet-order',id)} ${o.status!=='Cancelled'?b('Add product','carpet-add-item',id):''} ${o.balance_cents>0&&o.status!=='Cancelled'?`<button class="button primary" data-action="carpet-payment" data-id="${id}">Record payment</button>`:''}${shareButton('Share order / invoice','share-carpet-order',id)}<button class="button secondary" onclick="window.print()">Print</button>${deleteButton('carpet order','delete-carpet-order',id)}</div>`;
+  return `<button class="text-button" data-page="carpet-orders">← All carpet orders</button>${carpetBanner()}<div class="section-bar"><div><h2>${safe(o.number)}</h2><p>${safe(o.buyer_name)} · ${date(o.order_date||o.created_at)}</p></div>${actions}</div><div class="two-col"><div>${panel('Products in order','Names and prices come from the Products catalogue; stock is deducted automatically',lineRows?table(['Product','Qty','Unit price','Total',''],lineRows):empty('No products added','Add a product from the catalogue.'))}${panel('Buyer details','Order customer',`<div class="summary-line"><span>Name</span><strong>${safe(buyer?.name||'Unknown')}</strong></div><div class="summary-line"><span>Phone</span><strong>${safe(buyer?.phone||'')}</strong></div><div class="summary-line"><span>Email</span><strong>${safe(buyer?.email||'—')}</strong></div><div class="summary-line"><span>Address</span><strong>${safe(buyer?.address||'—')}</strong></div>`)}</div><div>${panel('Order summary',`${safe(o.status)} · ${carpetStatus(o)}`,`<div class="summary-line"><span>Type</span><strong>${safe(o.product_type||'Carpet')}</strong></div><div class="summary-line"><span>Models / quantities</span><strong>${safe(modelSummary(o)||'—')}</strong></div><div class="summary-line"><span>Products</span><strong>${money(o.items_cents)}</strong></div><div class="summary-line"><span>Labour charges</span><strong>${money(o.labour_cents)}</strong></div><div class="summary-line"><strong>Total</strong><strong>${money(o.total_cents)}</strong></div><div class="summary-line"><span>Paid</span><strong>${money(o.paid_cents)}</strong></div><div class="summary-line"><strong>Outstanding</strong><strong>${money(o.balance_cents)}</strong></div><p class="hint" style="white-space:pre-wrap"><strong>Special notes:</strong><br>${safe(o.special_notes||'No special notes.')}</p>${paymentRows}`)}</div></div>`;
+}
+
+function section(title, subtitle, button, action, content) {
+  return `<div class="section-bar"><p>${safe(subtitle)}</p><div class="toolbar"><input class="search" id="search" type="search" placeholder="Search ${safe(title.toLowerCase())}…" value="${safe(query)}" aria-label="Search">${button?`<button class="button primary" data-action="${action}">＋ ${button}</button>`:''}</div></div>${panel(title,'',content)}`;
+}
+function jobDetail(id) {
+  const j=state.jobs.find(x=>x.id===id);if(!j)return jobs();
+  const used=state.job_parts.filter(x=>x.job_id===id),invoice=state.invoices.find(x=>x.job_id===id);
+  const partRows=used.map(p=>`<tr><td><strong>${safe(p.part_name)}</strong><small>${safe(p.sku)}</small></td><td>${p.quantity}</td><td>${money(p.unit_price_cents)}</td><td>${money(p.unit_price_cents*p.quantity)}</td><td>${!invoice&&j.status!=='Closed'?b('Return','return-part',p.id):''}</td></tr>`).join('');
+  const buttons=invoice?`${b('View invoice','invoice',invoice.id)} ${shareButton('Share job card','share-job',id)} ${deleteButton('job card','delete-job',id)}`:`${b('Edit job','edit-job',id)} ${j.status!=='Closed'?b('Use part','use-part',id):''} ${shareButton('Share job card','share-job',id)} <button class="button primary" data-action="make-invoice" data-id="${id}">Create invoice</button> ${deleteButton('job card','delete-job',id)}`;
+  const serviceClass=(j.billing_type||'Paid service').toLowerCase().includes('free')?'free':(j.billing_type||'').toLowerCase().includes('warranty')?'warranty':'paid';
+  return `<button class="text-button" data-page="jobs">← All job cards</button><div class="section-bar"><div><h2>Job card #${j.id}</h2><p>${safe(j.registration)} · ${safe(j.make)} ${safe(j.model)} · ${safe(j.customer_name)}</p><div class="service-meta"><span class="meta-chip">${safe(j.work_type||'Service')}</span><span class="meta-chip ${serviceClass}">${safe(serviceLabel(j))}</span></div></div><div class="toolbar">${buttons}</div></div><div class="two-col"><div>${panel('Parts used','Stock is deducted when assigned',partRows?table(['Part','Qty','Unit price','Total',''],partRows):empty('No parts assigned','Add parts as you use them.'))}${panel('Reported issue & work notes','Customer description and technician notes',`<p><strong>Reported:</strong> ${safe(j.complaint)}</p><p style="white-space:pre-wrap;color:#748277">${safe(j.notes||'No work notes yet.')}</p>`)}</div><div>${panel('Job summary',`Opened ${date(j.created_at)}`,`<div class="summary-line"><span>Type of work</span><strong>${safe(j.work_type||'Service')}</strong></div><div class="summary-line"><span>Service</span><strong>${safe(serviceLabel(j))}</strong></div><div class="summary-line"><span>Service date</span><strong>${safe(date(j.service_date||j.created_at))}</strong></div><div class="summary-line"><span>Kilometres</span><strong>${j.kilometers!==undefined&&j.kilometers!==null?`${Number(j.kilometers).toLocaleString()} km`:'—'}</strong></div><div class="summary-line"><span>Status</span>${badge(j.status)}</div><div class="summary-line"><span>Labour</span><strong>${money(j.labour_cents)}</strong></div><div class="summary-line"><span>Parts</span><strong>${money(j.parts_cents)}</strong></div><div class="summary-line"><strong>Total</strong><strong>${money(j.labour_cents+j.parts_cents)}</strong></div>${invoice?'<p class="hint">Invoice issued. Charges are locked.</p>':''}`)}</div></div>`;
+}
+
+function invoiceDetail(id) {
+  const i=state.invoices.find(x=>x.id===id); if(!i) return invoices();
+  const job=state.jobs.find(x=>x.id===i.job_id), parts=state.job_parts.filter(x=>x.job_id===i.job_id), pays=state.payments.filter(x=>x.invoice_id===id);
+  const lines=parts.map(p=>`<tr><td>${safe(p.part_name)} × ${p.quantity}</td><td>${money(p.unit_price_cents*p.quantity)}</td></tr>`).join('')+`<tr><td>Labour</td><td>${money(job?.labour_cents||0)}</td></tr>`;
+  const paymentRows=pays.map(p=>`<div class="activity"><span class="activity-icon">✓</span><div style="flex:1"><p>${money(p.amount_cents)} · ${safe(p.method)}</p><small>${date(p.created_at)}</small></div>${b('Delete','delete-payment',p.id)}</div>`).join('');
+  return `<button class="text-button" data-page="invoices">← All invoices</button><div class="section-bar"><div><h2>Invoice ${safe(i.number)}</h2><p>${safe(i.customer_name)} · ${safe(i.registration)} · ${date(i.created_at)}</p></div><div class="toolbar">${i.total_cents>i.paid_cents?`<button class="button primary" data-action="payment" data-id="${id}">Record payment</button>`:''}${shareButton('Share invoice','share-invoice',id)}<button class="button secondary" onclick="window.print()">Print</button>${deleteButton('invoice','delete-invoice',id)}</div></div><div class="two-col"><div>${panel('Invoice lines','Recorded at the time of issue',table(['Description','Amount'],lines))}</div><div>${panel('Payment summary','Amounts in Sri Lankan rupees',`<div class="summary-line"><span>Invoice total</span><strong>${money(i.total_cents)}</strong></div><div class="summary-line"><span>Paid</span><strong>${money(i.paid_cents)}</strong></div><div class="summary-line"><strong>Balance due</strong><strong>${money(i.total_cents-i.paid_cents)}</strong></div>${paymentRows}`)}</div></div>`;
+}
+let detail = null;
+function render() {
+  $('#nav').innerHTML=NAV.map(([name,icon,label],index)=>`${name==='carpets'?'<div class="business-divider">Carpet business</div>':''}<button type="button" data-page="${name}" class="${page===name?'active':''}"><span class="icon">${icon}</span>${label}</button>`).join('');
+  const titles={dashboard:['OVERVIEW','Workshop overview'],customers:['PEOPLE','Customers'],motorcycles:['VEHICLES','Motorcycles'],jobs:['WORKSHOP','Job cards'],warranty:['WORKSHOP','Warranty claims'],'free-coupons':['YADEA','Free service coupons summary'],parts:['INVENTORY','Parts & stock'],invoices:['BILLING','Invoices & payments'],finance:['FINANCE','Income & expenses'],carpets:['CARPETS','Carpet business overview'],'carpet-products':['CARPETS','Products & prices'],'carpet-inventory':['CARPETS','Carpet inventory'],'carpet-orders':['CARPETS','Carpet orders'],'carpet-outstanding':['CARPETS','Outstanding carpet orders'],'carpet-paid':['CARPETS','Paid carpet orders'],'carpet-finance':['CARPETS','Income & expenses'],'carpet-buyers':['CARPETS','Carpet buyers'],'carpet-suppliers':['CARPETS','Carpet suppliers']};
+  $('#section-label').textContent=titles[page][0]; $('#heading').textContent=titles[page][1];
+  const pages={dashboard,customers,motorcycles,jobs,warranty,'free-coupons':freeServiceCoupons,parts,invoices,finance,carpets,'carpet-products':carpetProducts,'carpet-inventory':carpetInventory,'carpet-orders':()=>carpetOrders('all'),'carpet-outstanding':()=>carpetOrders('outstanding'),'carpet-paid':()=>carpetOrders('paid'),'carpet-finance':carpetFinance,'carpet-buyers':carpetBuyers,'carpet-suppliers':carpetSuppliers};
+  $('#new-job').hidden=page.startsWith('carpet')||page==='carpets'||page==='warranty';
+  $('#content').innerHTML=detail ? (detail.type==='job'?jobDetail(detail.id):detail.type==='invoice'?invoiceDetail(detail.id):carpetOrderDetail(detail.id)) : pages[page]();
+}
+function navigate(next) {detail=null;page=next;query='';render();window.scrollTo(0,0);}
+
+function field(name,label,type='text',value='',extra='required') {
+  return `<label class="field">${label}<input name="${name}" type="${type}" value="${safe(value)}" ${extra}></label>`;
+}
+function pick(name,label,items,selected) {
+  return `<label class="field">${label}<select name="${name}" required>${items.map(([value,text])=>`<option value="${safe(value)}" ${String(value)===String(selected)?'selected':''}>${safe(text)}</option>`).join('')}</select></label>`;
+}
+function textarea(name,label,value='') {return `<label class="field">${label}<textarea name="${name}">${safe(value)}</textarea></label>`;}
+function openForm(title, html, route, method='POST', callback) {
+  $('#form-error').textContent=''; $('#modal-title').textContent=title; $('#modal-fields').innerHTML=html;
+  $('#modal-form').onsubmit=async event=>{event.preventDefault();const data=Object.fromEntries(new FormData(event.currentTarget));const button=event.currentTarget.querySelector('[type=submit]');button.disabled=true;
+    try{const result=await send(route,data,method);$('#modal').close();if(callback)callback(result);}catch(error){toast(error.message,true);}finally{button.disabled=false;}};
+  $('#modal').showModal();
+}
+function form(action,id) {
+  if(action==='customer') return openForm('Add customer',field('name','Full name')+field('phone','Phone number','tel')+field('email','Email (optional)','email','',''), 'customers');
+  if(action==='bike'||action==='bike-for') {
+    if(!state.customers.length)return toast('Add a customer first',true);const today=new Date().toISOString().slice(0,10);
+    return openForm('Add motorcycle',pick('customer_id','Owner',state.customers.map(c=>[c.id,`${c.name} · ${c.phone}`]),id)+field('registration','Registration number')+field('motor_number','Motor number')+field('chassis_number','Chassis number')+field('date_of_sale','Date of sale','date',today)+field('make','Make')+field('model','Model')+field('year','Year (optional)','number','','min="1900"'),'motorcycles');
+  }
+  if(action==='edit-bike'){
+    const m=state.motorcycles.find(x=>x.id===id);if(!m)return;
+    return openForm(`Edit ${m.registration}`,pick('customer_id','Owner',state.customers.map(c=>[c.id,`${c.name} · ${c.phone}`]),m.customer_id)+field('registration','Registration number','text',m.registration)+field('motor_number','Motor number','text',m.motor_number||'')+field('chassis_number','Chassis number','text',m.chassis_number||'')+field('date_of_sale','Date of sale','date',String(m.date_of_sale||'').slice(0,10))+field('make','Make','text',m.make)+field('model','Model','text',m.model)+field('year','Year (optional)','number',m.year||'','min="1900"'),`motorcycles/${id}`,'PATCH',()=>navigate('motorcycles'));
+  }
+  if(action==='job-new'||action==='job-for') {
+    if(!state.motorcycles.length)return toast('Add a customer and motorcycle first',true);
+    const today=new Date().toISOString().slice(0,10);
+    return openForm('New job card',pick('motorcycle_id','Motorcycle',state.motorcycles.map(m=>[m.id,`${m.registration} · ${m.customer_name}`]),id)+field('service_date','Job / service date','date',today)+field('kilometers','Kilometres / odometer','number','','required min="0" step="1"')+pick('work_type','Type of work',workTypes.map(x=>[x,x]),'Service')+pick('billing_type','Service billing',billingTypes.map(x=>[x,x]),'Paid service')+field('service_number','Service number (optional)','number','','min="1" step="1"')+textarea('complaint','Reported issue'),'jobs','POST',result=>{navigate('jobs');showDetail('job',result.id);});
+  }
+  if(action==='part')return openForm('Add spare part',field('sku','SKU / part code')+field('name','Part name')+field('quantity','Opening quantity','number',0,'required min="0" step="1"')+field('price','Selling price (LKR)','number',0,'required min="0" step="0.01"')+field('reorder_level','Reorder level','number',0,'required min="0" step="1"'),'parts');
+  if(action==='restock')return openForm('Receive stock',`<p class="hint">${safe(state.parts.find(p=>p.id===id)?.name)}</p><input type="hidden" name="part_id" value="${id}">`+field('quantity','Quantity received','number',1,'required min="1" step="1"')+field('reason','Reason / supplier reference','','Stock received'),'stock');
+  if(action==='edit-job') {
+    const j=state.jobs.find(x=>x.id===id);
+    return openForm(`Edit job #${id}`,pick('status','Status',['Open','In progress','Ready','Closed'].map(s=>[s,s]),j.status)+field('service_date','Job / service date','date',String(j.service_date||j.created_at||'').slice(0,10))+field('kilometers','Kilometres / odometer','number',j.kilometers??'','required min="0" step="1"')+pick('work_type','Type of work',workTypes.map(x=>[x,x]),j.work_type||'Service')+pick('billing_type','Service billing',billingTypes.map(x=>[x,x]),j.billing_type||'Paid service')+field('service_number','Service number (optional)','number',j.service_number||'','min="1" step="1"')+field('labour','Labour charge (LKR)','number',(j.labour_cents/100).toFixed(2),'required min="0" step="0.01"')+textarea('notes','Work notes',j.notes),`jobs/${id}`,'PATCH',()=>showDetail('job',id));
+  }
+  if(action==='use-part') {
+    const available=state.parts.filter(p=>p.quantity>0);
+    if(!available.length)return toast('Add stock before assigning a part',true);
+    return openForm(`Use part · job #${id}`,`<input type="hidden" name="job_id" value="${id}">`+pick('part_id','Part',available.map(p=>[p.id,`${p.name} · ${p.quantity} in stock · ${money(p.price_cents)}`]))+field('quantity','Quantity used','number',1,'required min="1" step="1"'),'job-parts','POST',()=>showDetail('job',id));
+  }
+  if(action==='payment') {
+    const i=state.invoices.find(x=>x.id===id), balance=(i.total_cents-i.paid_cents)/100;
+    return openForm(`Payment · ${i.number}`,`<p class="hint">Outstanding: ${money(i.total_cents-i.paid_cents)}</p><input type="hidden" name="invoice_id" value="${id}">`+field('amount','Amount received (LKR)','number',balance.toFixed(2),`required min="0.01" max="${balance.toFixed(2)}" step="0.01"`)+pick('method','Payment method',['Cash','Card','Bank transfer'].map(s=>[s,s])),'payments','POST',()=>showDetail('invoice',id));
+  }
+  if(action==='finance-income'||action==='finance-expense'){
+    const type=action==='finance-income'?'Income':'Expense';
+    const categories=type==='Income'?['Other workshop income','Accessory sale','Scrap / recovery','Other']:['Parts purchase','Utilities','Salaries / wages','Rent','Fuel / transport','Tools / equipment','Marketing','Repairs / maintenance','Other'];
+    const today=new Date().toISOString().slice(0,10);
+    return openForm(`Add ${type.toLowerCase()}`,`<input type="hidden" name="type" value="${type}">`+field('record_date','Date','date',today)+pick('category','Category',categories.map(x=>[x,x]))+field('description','Description')+field('amount','Amount (LKR)','number','','required min="0.01" step="0.01"'),'finance-records','POST',()=>{page='finance';detail=null;render();});
+  }
+  if(action==='warranty-new'||action==='warranty-for'){
+    if(!state.motorcycles.length)return toast('Register the motorcycle first',true);const today=new Date().toISOString().slice(0,10);
+    return openForm('Add warranty claim',pick('motorcycle_id','Motorcycle',state.motorcycles.map(m=>[m.id,`${m.registration} · ${m.customer_name} · ${m.make} ${m.model}`]),action==='warranty-for'?id:undefined)+field('claim_date','Claim date','date',today)+field('ticket_number','Ticket number')+field('part_name','Part name')+textarea('issue','Issue / fault')+textarea('notes','Notes (optional)'),'warranty-claims','POST',()=>navigate('warranty'));
+  }
+  if(action==='edit-warranty'){
+    const w=state.warranty_claims.find(x=>x.id===id);if(!w)return;
+    return openForm(`Edit warranty ${w.ticket_number}`,`<p class="hint">${safe(w.registration)} · ${safe(w.customer_name)} · ${safe(w.make)} ${safe(w.model)}</p>`+field('claim_date','Claim date','date',String(w.claim_date||'').slice(0,10))+field('ticket_number','Ticket number','text',w.ticket_number)+field('part_name','Part name','text',w.part_name)+textarea('issue','Issue / fault',w.issue)+pick('status','Status',WARRANTY_STATUSES.map(x=>[x,x]),w.status)+textarea('notes','Notes (optional)',w.notes||''),`warranty-claims/${id}`,'PATCH',()=>navigate('warranty'));
+  }
+  if(action==='carpet-product')return openForm('Add product',field('name','Product name')+field('price','Price (LKR)','number','','required min="0.01" step="0.01"'),'carpet-products','POST',()=>navigate('carpet-products'));
+  if(action==='edit-carpet-product'){const product=state.carpet_products.find(x=>x.id===id);if(!product)return;return openForm('Edit product',field('name','Product name','text',product.name)+field('price','Price (LKR)','number',(product.price_cents/100).toFixed(2),'required min="0.01" step="0.01"'),`carpet-products/${id}`,'PATCH',()=>navigate('carpet-products'));}
+  if(action==='carpet-buyer')return openForm('Add carpet buyer',field('name','Buyer name')+field('phone','Phone number','tel')+field('email','Email (optional)','email','','')+textarea('address','Address'),'carpet-buyers','POST',()=>navigate('carpet-buyers'));
+  if(action==='carpet-supplier')return openForm('Add carpet supplier',field('name','Supplier name')+field('phone','Phone number','tel')+field('email','Email (optional)','email','','')+textarea('address','Address')+textarea('notes','Supplier notes'),'carpet-suppliers','POST',()=>navigate('carpet-suppliers'));
+  if(action==='carpet-item')return form('carpet-product');
+  if(action==='carpet-restock'){
+    const product=state.carpet_products.find(x=>x.id===id);if(!product)return;const item=inventoryForProduct(state.carpet_inventory,product),supplierOptions=[["","No supplier / not assigned"],...state.carpet_suppliers.map(x=>[x.id,`${x.name} · ${x.phone}`])];
+    return openForm(`Receive stock · ${product.name}`,`<p class="hint">Selling price: ${money(product.price_cents)} · Current stock: ${item?.quantity||0}</p><input type="hidden" name="product_id" value="${product.id}">`+field('quantity','Quantity received','number',1,'required min="1" step="1"')+field('cost','Cost per item (LKR)','number',((item?.cost_cents||0)/100).toFixed(2),'required min="0" step="0.01"')+pick('supplier_id','Supplier',supplierOptions,item?.supplier_id||'')+field('reason','Reason / supplier reference','','Stock received'),'carpet-stock','POST',()=>navigate('carpet-inventory'));
+  }
+  if(action==='carpet-stock-settings'){
+    const product=state.carpet_products.find(x=>x.id===id);if(!product)return;let item=inventoryForProduct(state.carpet_inventory,product);if(!item)return toast('Receive stock once to initialise this inventory record',true);const supplierOptions=[["","No supplier / not assigned"],...state.carpet_suppliers.map(x=>[x.id,`${x.name} · ${x.phone}`])];
+    return openForm(`Stock settings · ${product.name}`,field('sku','SKU / product code','text',item.sku||`PRD-${String(product.id).padStart(4,'0')}`)+textarea('description','Description / size / colour',item.description||'')+pick('supplier_id','Supplier',supplierOptions,item.supplier_id||'')+field('cost','Cost per item (LKR)','number',((item.cost_cents||0)/100).toFixed(2),'required min="0" step="0.01"')+field('reorder_level','Reorder level','number',item.reorder_level||0,'required min="0" step="1"'),`carpet-inventory/${item.id}`,'PATCH',()=>navigate('carpet-inventory'));
+  }
+  if(action==='carpet-order-new'||action==='carpet-order-for'){
+    if(!state.carpet_buyers.length)return toast('Add a carpet buyer first',true);const today=new Date().toISOString().slice(0,10);
+    if(!state.carpet_products.length)return toast('Add products first. Orders are built from the Products catalogue.',true);
+    return openForm('New carpet order',pick('buyer_id','Buyer',state.carpet_buyers.map(x=>[x.id,`${x.name} · ${x.phone}`]),id)+field('order_date','Order date','date',today)+pick('product_type','Product type',CARPET_TYPES.map(x=>[x,x]),'Carpet')+modelPicker([])+productOrderPicker()+field('labour','Labour charges (LKR)','number',0,'required min="0" step="0.01"')+textarea('special_notes','Special notes'),'carpet-orders','POST',result=>{page='carpet-orders';detail=null;render();showDetail('carpet-order',result.id);});
+  }
+  if(action==='edit-carpet-order'){
+    const o=state.carpet_orders.find(x=>x.id===id);if(!o)return;
+    return openForm(`Edit ${o.number}`,pick('status','Order status',['Open','In progress','Ready','Completed','Cancelled'].map(x=>[x,x]),o.status)+field('order_date','Order date','date',String(o.order_date||'').slice(0,10))+pick('product_type','Product type',CARPET_TYPES.map(x=>[x,x]),o.product_type||'Carpet')+modelPicker(o.models||[],o.model_quantities||{})+field('labour','Labour charges (LKR)','number',(o.labour_cents/100).toFixed(2),'required min="0" step="0.01"')+textarea('special_notes','Special notes',o.special_notes),`carpet-orders/${id}`,'PATCH',()=>showDetail('carpet-order',id));
+  }
+  if(action==='carpet-add-item'){
+    const available=state.carpet_products.filter(p=>Number(p.stock_quantity||0)>0);if(!available.length)return toast('Receive product stock first',true);
+    return openForm(`Add product · order #${id}`,`<input type="hidden" name="order_id" value="${id}">`+pick('product_id','Product',available.map(p=>[p.id,`${p.name} · ${p.stock_quantity} in stock · ${money(p.price_cents)}`]))+field('quantity','Quantity','number',1,'required min="1" step="1"'),'carpet-order-items','POST',()=>showDetail('carpet-order',id));
+  }
+  if(action==='carpet-finance-income'||action==='carpet-finance-expense'){
+    const type=action==='carpet-finance-income'?'Income':'Expense',today=new Date().toISOString().slice(0,10),categories=type==='Income'?['Other carpet income','Delivery income','Adjustment / refund received','Other']:['Carpet labour','Seat cover labour','Materials / fabric','Foam / backing','Stitching / tailoring','Delivery / transport','Packaging','Supplier payment','Tools / equipment','Utilities','Other'];
+    return openForm(`Add carpet ${type.toLowerCase()}`,`<input type="hidden" name="type" value="${type}">`+field('record_date','Date','date',today)+pick('category','Category',categories.map(x=>[x,x]))+field('description','Description')+field('amount','Amount (LKR)','number','','required min="0.01" step="0.01"'),'carpet-finance-records','POST',()=>navigate('carpet-finance'));
+  }
+  if(action==='carpet-payment'){
+    const o=state.carpet_orders.find(x=>x.id===id),balance=(o.balance_cents/100).toFixed(2);
+    return openForm(`Payment · ${o.number}`,`<p class="hint">Outstanding: ${money(o.balance_cents)}</p><input type="hidden" name="order_id" value="${id}">`+field('amount','Amount received (LKR)','number',balance,`required min="0.01" max="${balance}" step="0.01"`)+pick('method','Payment method',['Cash','Card','Bank transfer'].map(x=>[x,x])),'carpet-payments','POST',()=>showDetail('carpet-order',id));
+  }
+
+}
+function showDetail(type,id){detail={type,id};$('#content').innerHTML=type==='job'?jobDetail(id):type==='invoice'?invoiceDetail(id):carpetOrderDetail(id);window.scrollTo(0,0);}
+document.addEventListener('click',async event=>{
+  const target=event.target.closest('[data-page],[data-action]');if(!target)return;
+  if(target.dataset.page)return navigate(target.dataset.page);
+  const action=target.dataset.action,id=Number(target.dataset.id);
+  if(action==='job'||action==='invoice'||action==='carpet-order')return showDetail(action,id);
+  if(action==='return-part') {
+    const line=state.job_parts.find(x=>x.id===id);
+    if(!line||!confirm(`Return ${line.quantity} × ${line.part_name} to stock?`))return;
+    try{await send(`job-parts/${id}`,{},'DELETE');showDetail('job',line.job_id);}catch(error){toast(error.message,true);}return;
+  }
+  if(action==='make-invoice') {
+    if(!confirm(`Issue an invoice for job #${id}? Charges will be locked.`))return;
+    try{const result=await send('invoices',{job_id:id});navigate('invoices');showDetail('invoice',result.id);}catch(error){toast(error.message,true);}return;
+  }
+
+  if(action==='download-coupons-pdf'){await downloadCouponPdf();return;}
+  if(action==='print-coupons'){printCouponSheets();return;}
+
+  if(action==='delete-invoice')return protectedDelete(`invoice ${state.invoices.find(x=>x.id===id)?.number||id}`,`invoices/${id}`,()=>{navigate('invoices');});
+  if(action==='delete-payment'){const p=state.payments.find(x=>x.id===id);const invoiceId=p?.invoice_id;return protectedDelete('payment',`payments/${id}`,()=>invoiceId?showDetail('invoice',invoiceId):navigate('invoices'));}
+  if(action==='delete-job')return protectedDelete(`job card #${id}`,`jobs/${id}`,()=>navigate('jobs'));
+  if(action==='delete-customer')return protectedDelete('customer',`customers/${id}`,()=>navigate('customers'));
+  if(action==='delete-bike')return protectedDelete('motorcycle',`motorcycles/${id}`,()=>navigate('motorcycles'));
+  if(action==='delete-part')return protectedDelete('workshop part',`parts/${id}`,()=>navigate('parts'));
+  if(action==='delete-finance')return protectedDelete('finance entry',`finance-records/${id}`,()=>navigate('finance'));
+  if(action==='delete-warranty')return protectedDelete(`warranty claim ${state.warranty_claims.find(x=>x.id===id)?.ticket_number||id}`,`warranty-claims/${id}`,()=>navigate('warranty'));
+  if(action==='delete-carpet-finance')return protectedDelete('carpet finance entry',`carpet-finance-records/${id}`,()=>navigate('carpet-finance'));
+  if(action==='delete-carpet-product')return protectedDelete('carpet product',`carpet-products/${id}`,()=>navigate('carpet-products'));
+  if(action==='delete-carpet-order')return protectedDelete(`carpet order ${state.carpet_orders.find(x=>x.id===id)?.number||id}`,`carpet-orders/${id}`,()=>navigate('carpet-orders'));
+  if(action==='delete-carpet-line'){const line=state.carpet_order_items.find(x=>x.id===id),orderId=line?.order_id;return protectedDelete('carpet order item',`carpet-order-items/${id}`,()=>orderId?showDetail('carpet-order',orderId):navigate('carpet-orders'));}
+  if(action==='delete-carpet-payment'){const p=state.carpet_payments.find(x=>x.id===id),orderId=p?.order_id;return protectedDelete('carpet payment',`carpet-payments/${id}`,()=>orderId?showDetail('carpet-order',orderId):navigate('carpet-orders'));}
+  if(action==='delete-carpet-item')return protectedDelete('carpet inventory item',`carpet-inventory/${id}`,()=>navigate('carpet-inventory'));
+  if(action==='delete-carpet-buyer')return protectedDelete('carpet buyer',`carpet-buyers/${id}`,()=>navigate('carpet-buyers'));
+  if(action==='delete-carpet-supplier')return protectedDelete('carpet supplier',`carpet-suppliers/${id}`,()=>navigate('carpet-suppliers'));
+  if(action==='share-job'){
+    const j=state.jobs.find(x=>x.id===id);if(!j)return;
+    const text=['PATHIRANA AUTO — JOB CARD',`Job #${j.id} · ${date(j.created_at)}`,`Customer: ${j.customer_name}`,`Motorcycle: ${j.registration} · ${j.make} ${j.model}`,`Work: ${j.work_type||'Service'} · ${serviceLabel(j)}`,`Service date: ${date(j.service_date||j.created_at)}`,`Kilometres: ${j.kilometers!==undefined&&j.kilometers!==null?Number(j.kilometers).toLocaleString()+' km':'—'}`,`Status: ${j.status}`,`Reported issue: ${j.complaint}`,j.notes?`Work notes: ${j.notes}`:'',`Labour: ${money(j.labour_cents)}`,`Parts: ${money(j.parts_cents)}`,`Total: ${money(j.labour_cents+j.parts_cents)}`].filter(Boolean).join('\n');
+    await shareText(`Pathirana Auto · Job #${j.id}`,text);return;
+  }
+  if(action==='share-invoice'){
+    const i=state.invoices.find(x=>x.id===id);if(!i)return;
+    const text=['PATHIRANA AUTO — INVOICE SUMMARY',`${i.number} · ${date(i.created_at)}`,`Customer: ${i.customer_name}`,`Motorcycle: ${i.registration}`,`Total: ${money(i.total_cents)}`,`Paid: ${money(i.paid_cents)}`,`Balance: ${money(i.total_cents-i.paid_cents)}`].join('\n');
+    await shareText(`Pathirana Auto · ${i.number}`,text);return;
+  }
+
+  if(action==='share-warranty'){
+    const w=state.warranty_claims.find(x=>x.id===id);if(!w)return;const text=['PATHIRANA AUTO — WARRANTY CLAIM',`Ticket: ${w.ticket_number}`,`Claim date: ${date(w.claim_date||w.created_at)}`,`Motorcycle: ${w.registration} · ${w.make} ${w.model}`,`Motor No: ${w.motor_number||'—'}`,`Chassis No: ${w.chassis_number||'—'}`,`Customer: ${w.customer_name}${w.customer_phone?' · '+w.customer_phone:''}`,`Part: ${w.part_name}`,`Issue: ${w.issue}`,`Status: ${w.status}`,w.notes?`Notes: ${w.notes}`:''].filter(Boolean).join('\n');await shareText(`Warranty ${w.ticket_number}`,text);return;
+  }
+  if(action==='share-carpet-order'){
+    const o=state.carpet_orders.find(x=>x.id===id);if(!o)return;const buyer=state.carpet_buyers.find(x=>x.id===o.buyer_id),lines=state.carpet_order_items.filter(x=>x.order_id===id);
+    const itemText=lines.length?lines.map(x=>`${x.item_name} × ${x.quantity} @ ${money(x.unit_price_cents)} — ${money(x.quantity*x.unit_price_cents)}`).join('\n'):'No products added';
+    const text=['PATHIRANA CARPETS — ORDER / INVOICE',`${o.number} · ${date(o.order_date||o.created_at)}`,`Buyer: ${o.buyer_name}`,buyer?.phone?`Phone: ${buyer.phone}`:'',buyer?.address?`Address: ${buyer.address}`:'',`Product: ${o.product_type||'Carpet'}`,`Models / quantities: ${modelSummary(o)||'—'}`,'',itemText,'',`Labour charges: ${money(o.labour_cents)}`,`Total: ${money(o.total_cents)}`,`Paid: ${money(o.paid_cents)}`,`Outstanding: ${money(o.balance_cents)}`,o.special_notes?`Special notes: ${o.special_notes}`:''].filter(Boolean).join('\n');
+    await shareText(`Pathirana Carpets · ${o.number}`,text);return;
+  }
+  if(action==='share-carpet-finance'){
+    const month=currentMonthKey(),orderIncome=state.carpet_payments.filter(p=>monthKey(p.created_at)===month).reduce((s,p)=>s+p.amount_cents,0),otherIncome=state.carpet_finance_records.filter(r=>r.type==='Income'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0),expenses=state.carpet_finance_records.filter(r=>r.type==='Expense'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0);const text=['PATHIRANA CARPETS — MONTHLY FINANCE SUMMARY',new Date().toLocaleDateString('en-LK',{month:'long',year:'numeric'}),`Order payments: ${money(orderIncome)}`,`Other income: ${money(otherIncome)}`,`Expenses: ${money(expenses)}`,`Net cash flow: ${money(orderIncome+otherIncome-expenses)}`].join('\n');await shareText('Pathirana Carpets · Finance summary',text);return;
+  }
+  if(action==='share-finance'){
+    const month=currentMonthKey(),serviceIncome=state.payments.filter(p=>monthKey(p.created_at)===month).reduce((s,p)=>s+p.amount_cents,0),otherIncome=state.finance_records.filter(r=>r.type==='Income'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0),expenses=state.finance_records.filter(r=>r.type==='Expense'&&monthKey(r.record_date)===month).reduce((s,r)=>s+r.amount_cents,0);
+    const text=['PATHIRANA AUTO — MONTHLY FINANCE SUMMARY',new Date().toLocaleDateString('en-LK',{month:'long',year:'numeric'}),`Service income: ${money(serviceIncome)}`,`Other income: ${money(otherIncome)}`,`Expenses: ${money(expenses)}`,`Net cash flow: ${money(serviceIncome+otherIncome-expenses)}`].join('\n');
+    await shareText('Pathirana Auto · Finance summary',text);return;
+  }
+  form(action,id);
+});
+document.addEventListener('change',event=>{if(event.target.matches('[data-carpet-model]')){const picker=event.target.closest('.model-picker');const qty=event.target.closest('.model-choice')?.querySelector('[data-carpet-model-qty]');if(event.target.checked&&qty&&!qty.value)qty.value='1';syncModelPicker(picker);}if(event.target.matches('[data-order-product]')){const root=event.target.closest('.product-picker');const qty=event.target.closest('.product-pick-row')?.querySelector('[data-order-product-qty]');if(event.target.checked&&qty&&!qty.value)qty.value='1';syncProductOrderPicker(root);}});
+document.addEventListener('input',event=>{
+  if(event.target.matches('[data-order-product-qty]')){const row=event.target.closest('.product-pick-row'),box=row?.querySelector('[data-order-product]');if(box){const n=Math.floor(Number(event.target.value)||0);box.checked=n>0;}syncProductOrderPicker(event.target.closest('.product-picker'));return;}
+  if(event.target.matches('[data-carpet-model-qty]')){const row=event.target.closest('.model-choice'),box=row?.querySelector('[data-carpet-model]');if(box){const n=Math.floor(Number(event.target.value)||0);box.checked=n>0;}syncModelPicker(event.target.closest('.model-picker'));return;}
+  if(event.target.matches('[data-coupon-setting]')){couponSettings[event.target.dataset.couponSetting]=event.target.value;saveCouponSettings();document.querySelectorAll(`[data-coupon-setting="${event.target.dataset.couponSetting}"]`).forEach(el=>{if(el!==event.target)el.value=event.target.value;});return;}
+  if(event.target.matches('[data-coupon-remark]')){couponRemarks[String(event.target.dataset.couponRemark)]=event.target.value;saveCouponRemarks();return;}
+  if(event.target.id==='search'){const start=event.target.selectionStart;query=event.target.value.toLowerCase();render();const input=$('#search');input.focus();input.setSelectionRange(start,start);}
+});
+document.addEventListener('change',event=>{if(event.target.id==='job-sort'){jobSort=event.target.value;render();}if(event.target.id==='job-type-filter'){jobTypeFilter=event.target.value;render();}if(event.target.id==='job-billing-filter'){jobBillingFilter=event.target.value;render();}if(event.target.id==='coupon-filter-from'){couponFrom=event.target.value;render();}if(event.target.id==='coupon-filter-to'){couponTo=event.target.value;render();}});
+$('#new-job').onclick=()=>form('job-new');$('#close-modal').onclick=$('#cancel-modal').onclick=()=>$('#modal').close();
+$('#backup').onclick=()=>{
+  const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),link=document.createElement('a');
+  link.href=URL.createObjectURL(blob);link.download=`pathirana-auto-backup-${new Date().toISOString().slice(0,10)}.json`;link.click();URL.revokeObjectURL(link.href);toast('Backup downloaded');
+};
+$('#today').textContent=new Date().toLocaleDateString('en-LK',{weekday:'short',day:'numeric',month:'long',year:'numeric'});
+
+
+// PASTE YOUR FIREBASE WEB APP CONFIG HERE (Project settings > Your apps).
+// This public web configuration is NOT an admin/service-account credential.
+const firebaseConfig = {
+  apiKey: "AIzaSyDbGdlLnoWjWPMavRv-gdQsqqSmLeRLg04",
+  authDomain: "pathirana-auto.firebaseapp.com",
+  projectId: "pathirana-auto",
+  storageBucket: "pathirana-auto.firebasestorage.app",
+  messagingSenderId: "877980082868",
+  appId: "1:877980082868:web:3e6aecc1c649cbb45eade1"
+};
+const WORKSHOP = 'main';
+let db, auth, api, authApi, revision = 0, ready = false, saving = false;
+let unsubscribe, session = 0, loadSequence = 0, pendingRefresh = false;
+const collections = Object.keys(EMPTY_STATE);
+function cloudStatus(message) { $('#cloud-status').textContent=message; }
+function setReady(value) {
+  ready=value;
+  $('#new-job').disabled=!value; $('#backup').disabled=!value;
+}
+function clearSession() {
+  session++; loadSequence++; unsubscribe?.(); unsubscribe=null;
+  setReady(false); state=structuredClone(EMPTY_STATE); detail=null;
+  $('#modal').close(); $('#content').replaceChildren(); $('#nav').replaceChildren();
+  $('#workspace').hidden=true; $('#auth-view').hidden=false;
+  $('#password').value=''; $('#signed-in-email').textContent='';
+}
+function errorMessage(error) {
+  const code=error.code||'';
+  if(code.includes('permission-denied')) return 'Access denied. Ask the owner to add your Firebase user UID to the published database rules.';
+  if(code.includes('invalid-credential')||code.includes('wrong-password')||code.includes('user-not-found')) return 'Email or password is incorrect.';
+  if(code.includes('too-many-requests')) return 'Too many attempts. Please wait before trying again.';
+  if(code.includes('network')||code.includes('unavailable')) return 'Cannot reach Firebase. Check your internet connection and try again.';
+  return error.message || 'Something went wrong. Please try again.';
+}
+function metaRef() { return api.doc(db,'workshops',WORKSHOP); }
+function recordRef(name,id) { return api.doc(db,'workshops',WORKSHOP,name,String(id)); }
+async function loadCloud() {
+  const token=session, sequence=++loadSequence;
+  for(let attempt=0;attempt<4;attempt++) {
+    const before=await api.getDocFromServer(metaRef());
+    const base=before.exists()?before.data().revision:0;
+    const snapshots=await Promise.all(collections.map(name=>api.getDocsFromServer(api.collection(db,'workshops',WORKSHOP,name))));
+    const after=await api.getDocFromServer(metaRef());
+    if(base!==(after.exists()?after.data().revision:0)) continue;
+    if(token!==session||sequence!==loadSequence) return;
+    const next=structuredClone(EMPTY_STATE);
+    snapshots.forEach((snap,index)=>next[collections[index]]=snap.docs.map(x=>x.data()).sort((a,b)=>b.id-a.id));
+    state=next; revision=base; setReady(true); refresh(); cloudStatus('Connected · shared records'); return;
+  }
+  throw new Error('Records are changing on another device. Please try again in a moment.');
+}
+async function send(route,data,method='POST') {
+  if(!ready||!auth?.currentUser) throw new Error('Records are not ready. Reconnect before making changes.');
+  if(!navigator.onLine) throw new Error('You are offline. Reconnect before saving.');
+  if(saving) throw new Error('A save is already in progress. Please wait.');
+  saving=true; loadSequence++; const token=session, baseRevision=revision;
+  const original=structuredClone(state), next=structuredClone(state);
+  let result;
+  try {
+    result=mutateState(next,route,data,method);
+    const changes=[];
+    for(const name of collections) {
+      const previous=new Map(original[name].map(x=>[x.id,x]));
+      for(const item of next[name]) {
+        if(JSON.stringify(previous.get(item.id))!==JSON.stringify(item)) changes.push({name,item});
+        previous.delete(item.id);
+      }
+      for(const id of previous.keys()) changes.push({name,id,remove:true});
+    }
+    cloudStatus('Saving…');
+    await api.runTransaction(db,async transaction=>{
+      const current=await transaction.get(metaRef());
+      const remoteRevision=current.exists()?current.data().revision:0;
+      if(remoteRevision!==baseRevision) throw new Error('Another device changed these records. The latest data will load; review it and try again.');
+      if(token!==session) throw new Error('Your session changed. Sign in again.');
+      for(const change of changes) {
+        if(change.remove) transaction.delete(recordRef(change.name,change.id));
+        else transaction.set(recordRef(change.name,change.item.id),change.item);
+      }
+      transaction.set(metaRef(),{revision:baseRevision+1,updatedAt:api.serverTimestamp()});
+    });
+    if(token===session) {state=next;revision=baseRevision+1;refresh();toast('Saved to shared database');cloudStatus('Connected · shared records');}
+    return result;
+  } catch(error) {
+    if(token===session) {
+      setReady(false); cloudStatus('Refreshing records…');
+      try {await loadCloud();} catch {cloudStatus('Connection lost · reload to reconnect');}
+    }
+    throw new Error(errorMessage(error));
+  } finally {
+    saving=false;
+    if(pendingRefresh && token===session && auth?.currentUser){
+      pendingRefresh=false;
+      try{await loadCloud();}catch(error){setReady(false);cloudStatus("Reload to reconnect");toast(errorMessage(error),true);}
+    }
+  }
+}
+$('#login-form').onsubmit=async event=>{
+  event.preventDefault(); $('#auth-message').textContent='';
+  if(!auth) {$('#auth-message').textContent='Complete the Firebase configuration in index.html first.';return;}
+  $('#login-button').disabled=true;
+  try {await authApi.signInWithEmailAndPassword(auth,$('#email').value.trim(),$('#password').value);}
+  catch(error){$('#auth-message').textContent=errorMessage(error);}
+  finally{$('#login-button').disabled=false;}
+};
+$('#logout').onclick=async()=>{try{await authApi.signOut(auth);}catch(error){toast(errorMessage(error),true);}};
+$('#reset-password').onclick=async()=>{
+  if(!auth) return;
+  const email=$('#email').value.trim();
+  if(!email) {$('#auth-message').textContent='Enter your email address first.';return;}
+  try{await authApi.sendPasswordResetEmail(auth,email);$('#auth-message').textContent='If this account exists, a password reset email has been sent.';}
+  catch(error){$('#auth-message').textContent=errorMessage(error);}
+};
+window.addEventListener('offline',()=>{setReady(false);cloudStatus('Offline · reconnect to save');});
+window.addEventListener('online',()=>{if(auth?.currentUser&&!saving)loadCloud().catch(e=>{setReady(false);toast(errorMessage(e),true);});});
+// Reject all navigation and edit actions until authorized data has loaded.
+document.addEventListener('click',event=>{
+  if(event.target.closest('[data-action],[data-page]')&&!ready) {event.preventDefault();event.stopImmediatePropagation();toast('Reconnect and load your records first.',true);}
+},true);
+async function startCloud() {
+  if(firebaseConfig.apiKey.startsWith('PASTE_')) {
+    $('#setup-guide').hidden=false;
+    $('#auth-message').textContent='Setup required: replace firebaseConfig in this file, then publish the supplied Firestore rules. See SETUP.txt.';
+    return;
+  }
+  try {
+    const [appModule,authModule,firestoreModule]=await Promise.all([
+      import('https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js'),
+      import('https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js'),
+      import('https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js')
+    ]);
+    api=firestoreModule; authApi=authModule;
+    const app=appModule.initializeApp(firebaseConfig); db=api.getFirestore(app); auth=authApi.getAuth(app);
+    await authApi.setPersistence(auth,authApi.browserSessionPersistence);
+    $('#auth-message').textContent='';
+    authApi.onAuthStateChanged(auth,async user=>{
+      clearSession(); if(!user)return;
+      const token=session; $('#auth-message').textContent='Checking workshop access…';
+      try {
+        await loadCloud(); if(token!==session)return;
+        $('#auth-view').hidden=true; $('#workspace').hidden=false;
+        $('#signed-in-email').textContent=user.email; $('#auth-message').textContent='';
+        unsubscribe=api.onSnapshot(metaRef(),snap=>{
+          if(snap.metadata.hasPendingWrites)return;
+          const latest=snap.exists()?snap.data().revision:0;
+          if(saving){if(latest!==revision)pendingRefresh=true;return;}
+          if(latest!==revision)loadCloud().catch(error=>{setReady(false);cloudStatus('Sync unavailable · reload to reconnect');toast(errorMessage(error),true);});
+        },error=>{
+          clearSession(); $('#auth-message').textContent=errorMessage(error);
+          authApi.signOut(auth).catch(()=>{});
+        });
+      }catch(error){await authApi.signOut(auth);$('#auth-message').textContent=errorMessage(error);}
+    });
+  } catch(error) {$('#auth-message').textContent='Setup or connection error: '+errorMessage(error);}
+}
+startCloud();
+
+</script>
+</body>
+</html>
